@@ -1,0 +1,7 @@
+particle,cl1,cl2,cl3,cl4,populated_rule_ref
+Input,O,M,M,M,resource-or-reference
+Procedure,O,M,M,M,resource-or-reference
+Output,M,M,M,M,resource-or-reference-nonplaceholder
+Rationale,O,O,M,M,resource-or-reference
+Links,O,O,O,M,links-schema-forces-populated
+LifeCycleInformation,O,O,M,M,lifecycle-state-present

@@ -1,0 +1,22 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {path: credible-process-schemas}
+      - uses: actions/checkout@v4
+        with: {repository: modelbased/credible-process-tools, path: credible-process-tools}  # pin a tag once released
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install ./credible-process-tools
+      - name: profiles up to date with matrices
+        run: csp generate --check
+        working-directory: credible-process-schemas
+      - name: fixtures
+        run: csp fixtures
+        working-directory: credible-process-schemas
+      - name: worked example
+        run: csp check examples/ev-range/DecisionTask.dtmd examples/ev-range/SimulationTask.stmd examples/ev-range/ElectricRange_V2.mtmd examples/ev-range/TorqueControl.mtmd && csp check examples/ev-range/Credibility-Assessment2024-10.srmd --level CL3
+        working-directory: credible-process-schemas

@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mtmd:ModelingTaskMetaData xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:mtmd="http://ssp-standard.org/SSPTraceability1/ModelingTaskMetaData" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0.0" name="DC Motor Modeling Task (R4)" GUID="e1a2b3c4-2222-4abc-9def-000000000004">
+  <mtmd:GeneralInformation>
+    <stc:Resource kind="document" type="text/markdown" source="modeling-task-general-info.md" id="res-general-info"/>
+  <stc:Classification type="org.credible-process.core"><stc:ClassificationEntry keyword="model-validation.mode">internal</stc:ClassificationEntry></stc:Classification></mtmd:GeneralInformation>
+  <mtmd:AnalysisPhase>
+    <mtmd:AnalyzeModelingTaskAndObjectives>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="analyzemodelingtaskandobjectives-input.md" id="res-analyzemodelingtaskandobjectives-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="analyzemodelingtaskandobjectives-procedure.md" id="res-analyzemodelingtaskandobjectives-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="analyzemodelingtaskandobjectives-output.md" id="res-analyzemodelingtaskandobjectives-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="analyzemodelingtaskandobjectives-rationale.md" id="res-analyzemodelingtaskandobjectives-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:AnalyzeModelingTaskAndObjectives>
+    <mtmd:VerifyAnalysis>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="verifyanalysis-input.md" id="res-verifyanalysis-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="verifyanalysis-procedure.md" id="res-verifyanalysis-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="verifyanalysis-output.md" id="res-verifyanalysis-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="verifyanalysis-rationale.md" id="res-verifyanalysis-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:VerifyAnalysis>
+  </mtmd:AnalysisPhase>
+  <mtmd:RequirementsPhase>
+    <mtmd:DefineModelRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definemodelrequirements-input.md" id="res-definemodelrequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definemodelrequirements-procedure.md" id="res-definemodelrequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definemodelrequirements-output.md" id="res-definemodelrequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definemodelrequirements-rationale.md" id="res-definemodelrequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineModelRequirements>
+    <mtmd:DefineParameterRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterrequirements-input.md" id="res-defineparameterrequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterrequirements-procedure.md" id="res-defineparameterrequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterrequirements-output.md" id="res-defineparameterrequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterrequirements-rationale.md" id="res-defineparameterrequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineParameterRequirements>
+    <mtmd:DefineSimulationEnvironmentRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentrequirements-input.md" id="res-definesimulationenvironmentrequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentrequirements-procedure.md" id="res-definesimulationenvironmentrequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentrequirements-output.md" id="res-definesimulationenvironmentrequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentrequirements-rationale.md" id="res-definesimulationenvironmentrequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineSimulationEnvironmentRequirements>
+    <mtmd:DefineSimulationIntegrationRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationrequirements-input.md" id="res-definesimulationintegrationrequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationrequirements-procedure.md" id="res-definesimulationintegrationrequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationrequirements-output.md" id="res-definesimulationintegrationrequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationrequirements-rationale.md" id="res-definesimulationintegrationrequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineSimulationIntegrationRequirements>
+    <mtmd:DefineTestCaseRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcaserequirements-input.md" id="res-definetestcaserequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcaserequirements-procedure.md" id="res-definetestcaserequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcaserequirements-output.md" id="res-definetestcaserequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcaserequirements-rationale.md" id="res-definetestcaserequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineTestCaseRequirements>
+    <mtmd:DefineQualityAssuranceRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancerequirements-input.md" id="res-definequalityassurancerequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancerequirements-procedure.md" id="res-definequalityassurancerequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancerequirements-output.md" id="res-definequalityassurancerequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancerequirements-rationale.md" id="res-definequalityassurancerequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineQualityAssuranceRequirements>
+    <mtmd:VerifyRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="verifyrequirements-input.md" id="res-verifyrequirements-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="verifyrequirements-procedure.md" id="res-verifyrequirements-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="verifyrequirements-output.md" id="res-verifyrequirements-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="verifyrequirements-rationale.md" id="res-verifyrequirements-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:VerifyRequirements>
+  </mtmd:RequirementsPhase>
+  <mtmd:DesignPhase>
+    <mtmd:DefineModelDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definemodeldesignspecification-input.md" id="res-definemodeldesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definemodeldesignspecification-procedure.md" id="res-definemodeldesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definemodeldesignspecification-output.md" id="res-definemodeldesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definemodeldesignspecification-rationale.md" id="res-definemodeldesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineModelDesignSpecification>
+    <mtmd:DefineParameterDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterdesignspecification-input.md" id="res-defineparameterdesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterdesignspecification-procedure.md" id="res-defineparameterdesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterdesignspecification-output.md" id="res-defineparameterdesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="defineparameterdesignspecification-rationale.md" id="res-defineparameterdesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineParameterDesignSpecification>
+    <mtmd:DefineSimulationEnvironmentDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentdesignspecification-input.md" id="res-definesimulationenvironmentdesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentdesignspecification-procedure.md" id="res-definesimulationenvironmentdesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentdesignspecification-output.md" id="res-definesimulationenvironmentdesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationenvironmentdesignspecification-rationale.md" id="res-definesimulationenvironmentdesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineSimulationEnvironmentDesignSpecification>
+    <mtmd:DefineSimulationIntegrationDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationdesignspecification-input.md" id="res-definesimulationintegrationdesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationdesignspecification-procedure.md" id="res-definesimulationintegrationdesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationdesignspecification-output.md" id="res-definesimulationintegrationdesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definesimulationintegrationdesignspecification-rationale.md" id="res-definesimulationintegrationdesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineSimulationIntegrationDesignSpecification>
+    <mtmd:DefineTestCaseDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcasedesignspecification-input.md" id="res-definetestcasedesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcasedesignspecification-procedure.md" id="res-definetestcasedesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcasedesignspecification-output.md" id="res-definetestcasedesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definetestcasedesignspecification-rationale.md" id="res-definetestcasedesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineTestCaseDesignSpecification>
+    <mtmd:DefineQualityAssuranceDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancedesignspecification-input.md" id="res-definequalityassurancedesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancedesignspecification-procedure.md" id="res-definequalityassurancedesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancedesignspecification-output.md" id="res-definequalityassurancedesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definequalityassurancedesignspecification-rationale.md" id="res-definequalityassurancedesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DefineQualityAssuranceDesignSpecification>
+    <mtmd:VerifyDesignSpecification>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="verifydesignspecification-input.md" id="res-verifydesignspecification-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="verifydesignspecification-procedure.md" id="res-verifydesignspecification-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="verifydesignspecification-output.md" id="res-verifydesignspecification-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="verifydesignspecification-rationale.md" id="res-verifydesignspecification-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:VerifyDesignSpecification>
+  </mtmd:DesignPhase>
+  <mtmd:ImplementationPhase>
+    <mtmd:ImplementModel>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="implementmodel-input.md" id="res-implementmodel-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="implementmodel-procedure.md" id="res-implementmodel-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="implementmodel-output.md" id="res-implementmodel-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="implementmodel-rationale.md" id="res-implementmodel-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:ImplementModel>
+    <mtmd:ImplementParameter>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="implementparameter-input.md" id="res-implementparameter-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="implementparameter-procedure.md" id="res-implementparameter-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="implementparameter-output.md" id="res-implementparameter-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="implementparameter-rationale.md" id="res-implementparameter-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:ImplementParameter>
+    <mtmd:ImplementSimulationEnvironment>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="implementsimulationenvironment-input.md" id="res-implementsimulationenvironment-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="implementsimulationenvironment-procedure.md" id="res-implementsimulationenvironment-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="implementsimulationenvironment-output.md" id="res-implementsimulationenvironment-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="implementsimulationenvironment-rationale.md" id="res-implementsimulationenvironment-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:ImplementSimulationEnvironment>
+    <mtmd:ImplementTestCase>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="implementtestcase-input.md" id="res-implementtestcase-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="implementtestcase-procedure.md" id="res-implementtestcase-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="implementtestcase-output.md" id="res-implementtestcase-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="implementtestcase-rationale.md" id="res-implementtestcase-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:ImplementTestCase>
+    <mtmd:IntegrateSimulation>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="integratesimulation-input.md" id="res-integratesimulation-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="integratesimulation-procedure.md" id="res-integratesimulation-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="integratesimulation-output.md" id="res-integratesimulation-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="integratesimulation-rationale.md" id="res-integratesimulation-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:IntegrateSimulation>
+    <mtmd:AssureSimulationSetupQuality>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="assuresimulationsetupquality-input.md" id="res-assuresimulationsetupquality-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="assuresimulationsetupquality-procedure.md" id="res-assuresimulationsetupquality-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="assuresimulationsetupquality-output.md" id="res-assuresimulationsetupquality-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="assuresimulationsetupquality-rationale.md" id="res-assuresimulationsetupquality-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:AssureSimulationSetupQuality>
+    <mtmd:DeriveSimulationSetupQualityVerdict>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="derivesimulationsetupqualityverdict-input.md" id="res-derivesimulationsetupqualityverdict-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="derivesimulationsetupqualityverdict-procedure.md" id="res-derivesimulationsetupqualityverdict-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="derivesimulationsetupqualityverdict-output.md" id="res-derivesimulationsetupqualityverdict-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="derivesimulationsetupqualityverdict-rationale.md" id="res-derivesimulationsetupqualityverdict-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DeriveSimulationSetupQualityVerdict>
+  </mtmd:ImplementationPhase>
+  <mtmd:FulfillmentPhase>
+    <mtmd:DecideModelingObjectiveFulfillment>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="decidemodelingobjectivefulfillment-input.md" id="res-decidemodelingobjectivefulfillment-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="decidemodelingobjectivefulfillment-procedure.md" id="res-decidemodelingobjectivefulfillment-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="decidemodelingobjectivefulfillment-output.md" id="res-decidemodelingobjectivefulfillment-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="decidemodelingobjectivefulfillment-rationale.md" id="res-decidemodelingobjectivefulfillment-rat"/>
+      </stc:Rationale>
+      <stc:Links><stc:Link xlink:type="extended"><stc:Locator xlink:type="locator" xlink:href="#self"/><stc:Locator xlink:type="locator" xlink:href="#related"/></stc:Link></stc:Links>
+      <stc:LifeCycleInformation><stc:Drafted date="2026-08-04T00:00:00Z"><stc:Responsible organization="LOTAR Fixture Authoring" role="Modeling Engineer" name="Fixture Generator"/><ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted></stc:LifeCycleInformation>
+    </mtmd:DecideModelingObjectiveFulfillment>
+  </mtmd:FulfillmentPhase>
+</mtmd:ModelingTaskMetaData>

@@ -1,0 +1,187 @@
+[
+  {
+    "profile": "stmd-cl1.sch",
+    "record": "STMD",
+    "level": "CL1",
+    "valid": [
+      "stmd-cl1.xml"
+    ],
+    "invalid": [
+      "stmd-cl1-missing-AnalyzeSimulationTaskAndObjectives-Output.xml"
+    ]
+  },
+  {
+    "profile": "stmd-cl2.sch",
+    "record": "STMD",
+    "level": "CL2",
+    "valid": [
+      "stmd-cl2.xml"
+    ],
+    "invalid": [
+      "stmd-cl2-missing-ImplementModel-Input.xml"
+    ]
+  },
+  {
+    "profile": "stmd-cl3.sch",
+    "record": "STMD",
+    "level": "CL3",
+    "valid": [
+      "stmd-cl3.xml"
+    ],
+    "invalid": [
+      "stmd-cl3-missing-VerifyRequirements-LifeCycleInformation.xml"
+    ]
+  },
+  {
+    "profile": "stmd-cl4.sch",
+    "record": "STMD",
+    "level": "CL4",
+    "valid": [
+      "stmd-cl4.xml"
+    ],
+    "invalid": [
+      "stmd-cl4-missing-DefineParameterDesignSpecification-Links.xml"
+    ]
+  },
+  {
+    "profile": "dtmd-cl1.sch",
+    "record": "DTMD",
+    "level": "CL1",
+    "valid": [
+      "dtmd-cl1.xml"
+    ],
+    "invalid": [
+      "dtmd-cl1-missing-DefineResultQuality-Output.xml"
+    ]
+  },
+  {
+    "profile": "dtmd-cl2.sch",
+    "record": "DTMD",
+    "level": "CL2",
+    "valid": [
+      "dtmd-cl2.xml"
+    ],
+    "invalid": [
+      "dtmd-cl2-missing-AnalyzeDecisionTask-Procedure.xml"
+    ]
+  },
+  {
+    "profile": "dtmd-cl3.sch",
+    "record": "DTMD",
+    "level": "CL3",
+    "valid": [
+      "dtmd-cl3.xml"
+    ],
+    "invalid": [
+      "dtmd-cl3-missing-VerifySubTasks-Output.xml"
+    ]
+  },
+  {
+    "profile": "dtmd-cl4.sch",
+    "record": "DTMD",
+    "level": "CL4",
+    "valid": [
+      "dtmd-cl4.xml"
+    ],
+    "invalid": [
+      "dtmd-cl4-missing-EvaluateResults-Links.xml"
+    ]
+  },
+  {
+    "profile": "mtmd-cl1.sch",
+    "record": "MTMD",
+    "level": "CL1",
+    "valid": [
+      "mtmd-cl1.xml"
+    ],
+    "invalid": [
+      "mtmd-cl1-missing-AnalyzeModelingTaskAndObjectives-Output.xml"
+    ]
+  },
+  {
+    "profile": "mtmd-cl2.sch",
+    "record": "MTMD",
+    "level": "CL2",
+    "valid": [
+      "mtmd-cl2.xml"
+    ],
+    "invalid": [
+      "mtmd-cl2-missing-ImplementModel-Procedure.xml"
+    ]
+  },
+  {
+    "profile": "mtmd-cl3.sch",
+    "record": "MTMD",
+    "level": "CL3",
+    "valid": [
+      "mtmd-cl3.xml"
+    ],
+    "invalid": [
+      "mtmd-cl3-missing-ImplementModel-Procedure.xml"
+    ]
+  },
+  {
+    "profile": "mtmd-cl4.sch",
+    "record": "MTMD",
+    "level": "CL4",
+    "valid": [
+      "mtmd-cl4.xml"
+    ],
+    "invalid": [
+      "mtmd-cl4-missing-DefineParameterDesignSpecification-Links.xml"
+    ]
+  },
+  {
+    "profile": "mtmd-cl3.sch",
+    "record": "MTMD",
+    "level": "CL3",
+    "valid": [
+      "mtmd-cl3-externally-attested.xml"
+    ],
+    "invalid": [
+      "mtmd-cl3-externally-attested-unsigned-VerifyRequirements.xml"
+    ]
+  },
+  {
+    "profile": "sic-core-cl1.sch",
+    "record": "SRMD",
+    "level": "CL1",
+    "valid": [
+      "sic-core-cl1.xml"
+    ],
+    "invalid": []
+  },
+  {
+    "profile": "sic-core-cl2.sch",
+    "record": "SRMD",
+    "level": "CL2",
+    "valid": [
+      "sic-core-cl2.xml"
+    ],
+    "invalid": [
+      "sic-core-cl2-missing-implementation-simulation-integration-settings.xml"
+    ]
+  },
+  {
+    "profile": "sic-core-cl3.sch",
+    "record": "SRMD",
+    "level": "CL3",
+    "valid": [
+      "sic-core-cl3.xml"
+    ],
+    "invalid": [
+      "sic-core-cl3-missing-fulfillment-date.xml"
+    ]
+  },
+  {
+    "profile": "sic-core-cl4.sch",
+    "record": "SRMD",
+    "level": "CL4",
+    "valid": [
+      "sic-core-cl4.xml"
+    ],
+    "invalid": [
+      "sic-core-cl4-missing-fulfillment-date.xml"
+    ]
+  }
+]

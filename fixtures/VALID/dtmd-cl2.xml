@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dtmd:DecisionTaskMetaData xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:dtmd="http://ssp-standard.org/SSPTraceability1/DecisionTaskMetaData" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0.0" name="Window Lifter Motor Selection Decision" GUID="d1a2b3c4-5678-4abc-9def-000000000001">
+  <dtmd:GeneralInformation>
+    <stc:Resource kind="document" type="text/markdown" source="decision-task-general-info.md" id="res-general-info"/>
+    </dtmd:GeneralInformation>
+  <dtmd:AnalysisPhase>
+    <dtmd:AnalyzeDecisionTask>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="analyzedecisiontask-input.md" id="res-analyzedecisiontask-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="analyzedecisiontask-procedure.md" id="res-analyzedecisiontask-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" source="risk-assessment-matrix.xlsx" id="res-analyzedecisiontask-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="analyzedecisiontask-rationale.md" id="res-analyzedecisiontask-rat"/>
+      </stc:Rationale>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-08-04T00:00:00Z">
+          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+        <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:AnalyzeDecisionTask>
+  </dtmd:AnalysisPhase>
+  <dtmd:DefinitionPhase>
+    <dtmd:DefineSubTasks>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="definesubtasks-input.md" id="res-definesubtasks-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="definesubtasks-procedure.md" id="res-definesubtasks-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="sub-task-definitions.md" id="res-definesubtasks-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="definesubtasks-rationale.md" id="res-definesubtasks-rat"/>
+      </stc:Rationale>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-08-04T00:00:00Z">
+          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+        <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DefineSubTasks>
+    <dtmd:DefineResultQuality>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="defineresultquality-input.md" id="res-defineresultquality-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="defineresultquality-procedure.md" id="res-defineresultquality-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" source="risk-assessment-matrix.xlsx" id="res-defineresultquality-out"/>
+        <stc:Classification type="org.credible-process.core" xlink:type="simple" xlink:href="">
+          <stc:ClassificationEntry keyword="credibility.level" xlink:type="simple">CL2</stc:ClassificationEntry>
+        </stc:Classification>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="defineresultquality-rationale.md" id="res-defineresultquality-rat"/>
+      </stc:Rationale>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-08-04T00:00:00Z">
+          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+        <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DefineResultQuality>
+  </dtmd:DefinitionPhase>
+  <dtmd:ExecutionPhase>
+    <dtmd:PerformSubTasks>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="performsubtasks-input.md" id="res-performsubtasks-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="performsubtasks-procedure.md" id="res-performsubtasks-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="sub-task-results.md" id="res-performsubtasks-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="performsubtasks-rationale.md" id="res-performsubtasks-rat"/>
+      </stc:Rationale>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-08-04T00:00:00Z">
+          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+        <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:PerformSubTasks>
+  </dtmd:ExecutionPhase>
+  <dtmd:EvaluationPhase>
+    <dtmd:EvaluateResults>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="evaluateresults-input.md" id="res-evaluateresults-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="evaluateresults-procedure.md" id="res-evaluateresults-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="evaluation-summary.md" id="res-evaluateresults-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="evaluateresults-rationale.md" id="res-evaluateresults-rat"/>
+      </stc:Rationale>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-08-04T00:00:00Z">
+          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+        <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:EvaluateResults>
+  </dtmd:EvaluationPhase>
+  <dtmd:FulfillmentPhase>
+    <dtmd:DecideObjectiveFulfillment>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="decideobjectivefulfillment-input.md" id="res-decideobjectivefulfillment-in"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="decideobjectivefulfillment-procedure.md" id="res-decideobjectivefulfillment-proc"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="fulfillment-decision.md" id="res-decideobjectivefulfillment-out"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="decideobjectivefulfillment-rationale.md" id="res-decideobjectivefulfillment-rat"/>
+      </stc:Rationale>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-08-04T00:00:00Z">
+          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+        <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DecideObjectiveFulfillment>
+  </dtmd:FulfillmentPhase>
+</dtmd:DecisionTaskMetaData>

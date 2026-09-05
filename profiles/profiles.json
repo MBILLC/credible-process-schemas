@@ -1,0 +1,325 @@
+{
+  "schemas_version": "0.1.0",
+  "classification_type": "org.credible-process.core",
+  "levels": [
+    "CL1",
+    "CL2",
+    "CL3",
+    "CL4"
+  ],
+  "profiles": [
+    {
+      "file": "stmd-cl1.sch",
+      "conformance_id": "CSP-STMD-CL1",
+      "record": "STMD",
+      "level": "CL1",
+      "xsd": "schemas/upstream/STMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeSimulationTaskAndObjectives",
+        "ExecuteSimulation",
+        "EvaluateSimulationResults",
+        "DecideSimulationObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "stmd-cl2.sch",
+      "conformance_id": "CSP-STMD-CL2",
+      "record": "STMD",
+      "level": "CL2",
+      "xsd": "schemas/upstream/STMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeSimulationTaskAndObjectives",
+        "VerifyAnalysis",
+        "DefineModelRequirements",
+        "DefineTestCaseRequirements",
+        "ImplementModel",
+        "ImplementTestCase",
+        "IntegrateSimulation",
+        "ExecuteSimulation",
+        "EvaluateSimulationResults",
+        "DeriveSimulationQualityVerdict",
+        "DecideSimulationObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "stmd-cl3.sch",
+      "conformance_id": "CSP-STMD-CL3",
+      "record": "STMD",
+      "level": "CL3",
+      "xsd": "schemas/upstream/STMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeSimulationTaskAndObjectives",
+        "VerifyAnalysis",
+        "DefineModelRequirements",
+        "DefineParameterRequirements",
+        "DefineSimulationEnvironmentRequirements",
+        "DefineSimulationIntegrationRequirements",
+        "DefineTestCaseRequirements",
+        "DefineQualityAssuranceRequirements",
+        "VerifyRequirements",
+        "DefineModelDesignSpecification",
+        "DefineTestCaseDesignSpecification",
+        "ImplementModel",
+        "ImplementParameter",
+        "ImplementSimulationEnvironment",
+        "ImplementTestCase",
+        "IntegrateSimulation",
+        "AssureSimulationSetupQuality",
+        "DeriveSimulationSetupQualityVerdict",
+        "ExecuteSimulation",
+        "EvaluateSimulationResults",
+        "AssureSimulationQuality",
+        "DeriveSimulationQualityVerdict",
+        "DecideSimulationObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "stmd-cl4.sch",
+      "conformance_id": "CSP-STMD-CL4",
+      "record": "STMD",
+      "level": "CL4",
+      "xsd": "schemas/upstream/STMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeSimulationTaskAndObjectives",
+        "VerifyAnalysis",
+        "DefineModelRequirements",
+        "DefineParameterRequirements",
+        "DefineSimulationEnvironmentRequirements",
+        "DefineSimulationIntegrationRequirements",
+        "DefineTestCaseRequirements",
+        "DefineQualityAssuranceRequirements",
+        "VerifyRequirements",
+        "DefineModelDesignSpecification",
+        "DefineParameterDesignSpecification",
+        "DefineSimulationEnvironmentDesignSpecification",
+        "DefineSimulationIntegrationDesignSpecification",
+        "DefineTestCaseDesignSpecification",
+        "DefineQualityAssuranceDesignSpecification",
+        "VerifyDesignSpecification",
+        "ImplementModel",
+        "ImplementParameter",
+        "ImplementSimulationEnvironment",
+        "ImplementTestCase",
+        "IntegrateSimulation",
+        "AssureSimulationSetupQuality",
+        "DeriveSimulationSetupQualityVerdict",
+        "ExecuteSimulation",
+        "EvaluateSimulationResults",
+        "AssureSimulationQuality",
+        "DeriveSimulationQualityVerdict",
+        "DecideSimulationObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "dtmd-cl1.sch",
+      "conformance_id": "CDP-DTMD-CL1",
+      "record": "DTMD",
+      "level": "CL1",
+      "xsd": "schemas/upstream/DTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeDecisionTask",
+        "DefineSubTasks",
+        "DefineResultQuality",
+        "PerformSubTasks",
+        "EvaluateResults",
+        "DecideObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "dtmd-cl2.sch",
+      "conformance_id": "CDP-DTMD-CL2",
+      "record": "DTMD",
+      "level": "CL2",
+      "xsd": "schemas/upstream/DTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeDecisionTask",
+        "DefineSubTasks",
+        "DefineResultQuality",
+        "PerformSubTasks",
+        "EvaluateResults",
+        "DecideObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "dtmd-cl3.sch",
+      "conformance_id": "CDP-DTMD-CL3",
+      "record": "DTMD",
+      "level": "CL3",
+      "xsd": "schemas/upstream/DTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeDecisionTask",
+        "VerifyAnalysis",
+        "DefineSubTasks",
+        "DefineResultQuality",
+        "VerifySubTasks",
+        "PerformSubTasks",
+        "EvaluateResults",
+        "AssureResultQuality",
+        "DeriveResultQualityVerdict",
+        "DecideObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "dtmd-cl4.sch",
+      "conformance_id": "CDP-DTMD-CL4",
+      "record": "DTMD",
+      "level": "CL4",
+      "xsd": "schemas/upstream/DTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeDecisionTask",
+        "VerifyAnalysis",
+        "DefineSubTasks",
+        "DefineResultQuality",
+        "VerifySubTasks",
+        "PerformSubTasks",
+        "EvaluateResults",
+        "AssureResultQuality",
+        "DeriveResultQualityVerdict",
+        "DecideObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "mtmd-cl1.sch",
+      "conformance_id": "CMP-MTMD-CL1",
+      "record": "MTMD",
+      "level": "CL1",
+      "xsd": "schemas/upstream/MTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeModelingTaskAndObjectives",
+        "DecideModelingObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "mtmd-cl2.sch",
+      "conformance_id": "CMP-MTMD-CL2",
+      "record": "MTMD",
+      "level": "CL2",
+      "xsd": "schemas/upstream/MTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeModelingTaskAndObjectives",
+        "VerifyAnalysis",
+        "DefineModelRequirements",
+        "DefineTestCaseRequirements",
+        "ImplementModel",
+        "ImplementTestCase",
+        "IntegrateSimulation",
+        "DecideModelingObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "mtmd-cl3.sch",
+      "conformance_id": "CMP-MTMD-CL3",
+      "record": "MTMD",
+      "level": "CL3",
+      "xsd": "schemas/upstream/MTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeModelingTaskAndObjectives",
+        "VerifyAnalysis",
+        "DefineModelRequirements",
+        "DefineParameterRequirements",
+        "DefineSimulationEnvironmentRequirements",
+        "DefineSimulationIntegrationRequirements",
+        "DefineTestCaseRequirements",
+        "DefineQualityAssuranceRequirements",
+        "VerifyRequirements",
+        "DefineModelDesignSpecification",
+        "DefineTestCaseDesignSpecification",
+        "ImplementModel",
+        "ImplementParameter",
+        "ImplementSimulationEnvironment",
+        "ImplementTestCase",
+        "IntegrateSimulation",
+        "AssureSimulationSetupQuality",
+        "DeriveSimulationSetupQualityVerdict",
+        "DecideModelingObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "mtmd-cl4.sch",
+      "conformance_id": "CMP-MTMD-CL4",
+      "record": "MTMD",
+      "level": "CL4",
+      "xsd": "schemas/upstream/MTMD.xsd",
+      "mandatory_steps": [
+        "GeneralInformation",
+        "AnalyzeModelingTaskAndObjectives",
+        "VerifyAnalysis",
+        "DefineModelRequirements",
+        "DefineParameterRequirements",
+        "DefineSimulationEnvironmentRequirements",
+        "DefineSimulationIntegrationRequirements",
+        "DefineTestCaseRequirements",
+        "DefineQualityAssuranceRequirements",
+        "VerifyRequirements",
+        "DefineModelDesignSpecification",
+        "DefineParameterDesignSpecification",
+        "DefineSimulationEnvironmentDesignSpecification",
+        "DefineSimulationIntegrationDesignSpecification",
+        "DefineTestCaseDesignSpecification",
+        "DefineQualityAssuranceDesignSpecification",
+        "VerifyDesignSpecification",
+        "ImplementModel",
+        "ImplementParameter",
+        "ImplementSimulationEnvironment",
+        "ImplementTestCase",
+        "IntegrateSimulation",
+        "AssureSimulationSetupQuality",
+        "DeriveSimulationSetupQualityVerdict",
+        "DecideModelingObjectiveFulfillment"
+      ]
+    },
+    {
+      "file": "sic-core-cl1.sch",
+      "conformance_id": "SIC-CL1",
+      "record": "SRMD/SIC-Core",
+      "level": "CL1",
+      "xsd": "schemas/upstream/SRMDSICCore.xsd"
+    },
+    {
+      "file": "sic-core-cl2.sch",
+      "conformance_id": "SIC-CL2",
+      "record": "SRMD/SIC-Core",
+      "level": "CL2",
+      "xsd": "schemas/upstream/SRMDSICCore.xsd"
+    },
+    {
+      "file": "sic-core-cl3.sch",
+      "conformance_id": "SIC-CL3",
+      "record": "SRMD/SIC-Core",
+      "level": "CL3",
+      "xsd": "schemas/upstream/SRMDSICCore.xsd"
+    },
+    {
+      "file": "sic-core-cl4.sch",
+      "conformance_id": "SIC-CL4",
+      "record": "SRMD/SIC-Core",
+      "level": "CL4",
+      "xsd": "schemas/upstream/SRMDSICCore.xsd"
+    },
+    {
+      "file": "stc-integrity.sch",
+      "conformance_id": "STC-INT",
+      "record": "any",
+      "level": "all",
+      "hand_authored": true
+    },
+    {
+      "file": "credible-process-core.sch",
+      "conformance_id": "CP-CORE",
+      "record": "any",
+      "level": "all",
+      "hand_authored": true
+    }
+  ]
+}

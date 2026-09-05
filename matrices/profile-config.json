@@ -1,0 +1,75 @@
+{
+  "classification_type": "org.credible-process.core",
+  "levels": [
+    "CL1",
+    "CL2",
+    "CL3",
+    "CL4"
+  ],
+  "records": {
+    "STMD": {
+      "prefix": "stmd",
+      "namespace": "http://ssp-standard.org/SSPTraceability1/SimulationTaskMetaData",
+      "root": "SimulationTaskMetaData",
+      "conformance_id": "CSP-STMD-{level}",
+      "file": "stmd-{level_lc}.sch",
+      "title": "Credible Simulation Process record (STMD) conformance profile {level}"
+    },
+    "DTMD": {
+      "prefix": "dtmd",
+      "namespace": "http://ssp-standard.org/SSPTraceability1/DecisionTaskMetaData",
+      "root": "DecisionTaskMetaData",
+      "conformance_id": "CDP-DTMD-{level}",
+      "file": "dtmd-{level_lc}.sch",
+      "title": "Credible Decision Process record (DTMD) conformance profile {level}"
+    },
+    "MTMD": {
+      "prefix": "mtmd",
+      "namespace": "http://ssp-standard.org/SSPTraceability1/ModelingTaskMetaData",
+      "root": "ModelingTaskMetaData",
+      "conformance_id": "CMP-MTMD-{level}",
+      "file": "mtmd-{level_lc}.sch",
+      "title": "Credible Modeling Process record (MTMD) conformance profile {level}"
+    }
+  },
+  "sic_core": {
+    "classification_type": "org.mic-core.sic-core",
+    "conformance_id": "SIC-{level}",
+    "file": "sic-core-{level_lc}.sch",
+    "xsd": "schemas/upstream/SRMDSICCore.xsd",
+    "baseline_mandatory_keywords": [
+      "administrative.simulation-task",
+      "analysis.item-under-test",
+      "analysis.simulation-task.objectives",
+      "requirements.parameter.subject-information.parametrized-entity",
+      "execution.model",
+      "execution.parameter",
+      "execution.tool",
+      "fulfillment.task-status",
+      "administrative.simulation-task.confidentiality",
+      "administrative.contact.customer-person",
+      "administrative.contact.customer-entity",
+      "administrative.contact.contractor-person",
+      "administrative.contact.contractor-entity"
+    ]
+  },
+  "dtmd_level_keyword": {
+    "step": "DefineResultQuality",
+    "particle": "Output",
+    "keyword": "credibility.level"
+  },
+  "mtmd_external_attestation_steps": [
+    "VerifyAnalysis",
+    "VerifyRequirements",
+    "VerifyDesignSpecification",
+    "AssureSimulationSetupQuality",
+    "DeriveSimulationSetupQualityVerdict"
+  ],
+  "mtmd_validation_mode_mandatory_from": "CL3",
+  "stc_namespace": "http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon",
+  "srmd_namespace": "http://ssp-standard.org/SSPTraceability1/SimulationResourceMetaData",
+  "dtmd_signed_steps": [
+    "DefineResultQuality",
+    "DecideObjectiveFulfillment"
+  ]
+}

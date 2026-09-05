@@ -1,0 +1,3 @@
+CMP-MTMD-CL3-VerifyRequirements-LifeCycleInformation-populated
+CMP-MTMD-CL3-VerifyRequirements-Output-populated
+CMP-MTMD-CL3-VerifyRequirements-Rationale-populated

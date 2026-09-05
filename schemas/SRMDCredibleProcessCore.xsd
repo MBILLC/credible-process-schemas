@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Credible-Process Core vocabulary for SRMD / SSP-LS-Traceability Classification blocks.
+    Part of credible-process-schemas (BSD 2-Clause). See ../vocabulary/Credible_Process_Core_Vocabulary.md.
+
+    Classification type: org.credible-process.core
+
+    Design: like SRMDSICCore.xsd / SRMDMICCore.xsd this file defines no new elements. It xs:includes
+    the base SRMD structural schema and contributes (a) a named simple type, CredibilityLevelType
+    (CL1..CL4), that other schemas may import or restate, and (b) nothing else at XSD level — the
+    keyword rules for the Classification block live in the standalone, processor-checkable
+    ../profiles/credible-process-core.sch (kept out of xs:appinfo on purpose: embedded Schematron is
+    not run by common toolchains and had gone unverified for months in the project this was
+    extracted from).
+
+    The vocabulary is deliberately tiny: it carries only facts the Credible Simulation / Modeling /
+    Decision Processes themselves define — the assigned credibility level, how a model's external
+    validation evidence is handled, and a durable plain-text note about an embedded signature.
+    Administrative, legal and archival keywords belong to whoever profiles this layer (an industry
+    standard, a company), not here.
+
+    Where the level keyword attaches: the Classification of the Output particle of the Credible
+    Decision Process step DefinitionPhase/DefineResultQuality in a DTMD instance — the step the
+    prostep ivip white paper calls "Assign specific Credibilities". Profiles for STMD/MTMD read the
+    level from the governing DTMD, or from their own GeneralInformation Classification when a
+    task is recorded without a decision record.
+
+    Namespace owner of "org.credible-process.core" is provisional (working name); a rename is a one-line change in
+    matrices/profile-config.toml plus regeneration.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"
+    xmlns:srmd="http://ssp-standard.org/SSPTraceability1/SimulationResourceMetaData"
+    xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon"
+    targetNamespace="http://ssp-standard.org/SSPTraceability1/SimulationResourceMetaData">
+
+    <xs:include schemaLocation="upstream/SRMD.xsd"/>
+
+    <xs:simpleType name="CredibilityLevelType">
+        <xs:annotation>
+            <xs:documentation>
+                The four M&amp;S Credibility Levels of the prostep ivip SmartSE credibility
+                framework: CL1 Trend Behavior, CL2 Quantitative Predictions, CL3 Design
+                Evaluation, CL4 Virtual Product V&amp;V. Closed enumeration; the value of the
+                credibility.level ClassificationEntry must be one of these.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CL1"/>
+            <xs:enumeration value="CL2"/>
+            <xs:enumeration value="CL3"/>
+            <xs:enumeration value="CL4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ModelValidationModeType">
+        <xs:annotation>
+            <xs:documentation>
+                How a model's verification/validation evidence is handled in a CMP (MTMD) record:
+                internal (authored for this task), copied-in (external evidence physically copied
+                into the record's resources), externally-attested (evidence exists elsewhere and a
+                Simulation Engineer attests to it by signing the QA step's life-cycle entry).
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="internal"/>
+            <xs:enumeration value="copied-in"/>
+            <xs:enumeration value="externally-attested"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

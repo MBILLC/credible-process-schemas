@@ -1,0 +1,85 @@
+record_type,phase,keyword,cl1,cl2,cl3,cl4,process_record_authoritative,justification
+SIC,Administrative,administrative.simulation-task,M,M,M,M,N,"SIC-Core-schema-Mandatory (unconditional, conformance clause forbids demotion even at CL1); file/task identity -- same Spine treatment as STMD/DTMD/MTMD GeneralInformation."
+SIC,Administrative,administrative.simulation-task.confidentiality,M,M,M,M,N,"'Always' tier: a confidentiality/access-rights determination is a categorical legal obligation, same reasoning already used for administrative/legal keywords in a downstream profile -- promoted flat, not level-scaled."
+SIC,Administrative,administrative.contact.customer-person,M,M,M,M,N,"'Always' tier: identifies who requested the task -- accountability chain, not a credibility signal."
+SIC,Administrative,administrative.contact.customer-entity,M,M,M,M,N,'Always' tier: same accountability-chain reasoning as customer-person.
+SIC,Administrative,administrative.contact.contractor-person,M,M,M,M,N,'Always' tier: identifies who performed the task -- same accountability-chain reasoning.
+SIC,Administrative,administrative.contact.contractor-entity,M,M,M,M,N,'Always' tier: same accountability-chain reasoning as contractor-person.
+SIC,Administrative,administrative.overall-product,R,R,M,M,N,"Sec 3.4 'Administrative Data' group row: Recommended (SIC Core default) unchanged at CL1/CL2, Mandatory at CL3/CL4. Part of the Basic Subset (Appendix B) CL1 floor."
+SIC,Administrative,administrative.specific-product,R,R,M,M,N,Same Administrative Data group pattern as administrative.overall-product; part of the Basic Subset CL1 floor.
+SIC,Administrative,administrative.ordering-project,R,R,M,M,N,Same Administrative Data group pattern.
+SIC,Administrative,administrative.simulation-request,R,R,M,M,N,Same Administrative Data group pattern; part of the Basic Subset CL1 floor.
+SIC,Administrative,administrative.simulation-task.date.start,R,R,M,M,N,"Folded into the Administrative Data group (scheduling context, not named separately in Sec 3.4 but not categorical/legal either -- doesn't belong in the flat 'Always' tier)."
+SIC,Administrative,administrative.simulation-task.date.delivery,R,R,M,M,N,Same reasoning as administrative.simulation-task.date.start.
+SIC,Administrative,administrative.simulation-task.creator,R,R,M,M,N,"Folded into the Administrative Data group. A stronger case exists for flat-Mandatory (mirrors Common vocabulary's administrative.created-by, promoted flat in the 2026-07-21 provenance-unification pass) -- kept at the general group tier here for consistency with its date.creation sibling; worth revisiting alongside Othe process-record-authoritative rule/ if the working group wants provenance fields harmonized across the downstream profile Core and SIC Core."
+SIC,Administrative,administrative.simulation-task.date.creation,R,R,M,M,N,Folded into the Administrative Data group; same provenance-harmonization note as administrative.simulation-task.creator.
+SIC,Analysis,analysis.item-under-test,M,M,M,M,N,SIC-Core-schema-Mandatory (unconditional); identifies what is being analyzed -- precondition for every other Analysis-phase field.
+SIC,Analysis,analysis.simulation-task.objectives,M,M,M,M,N,SIC-Core-schema-Mandatory (unconditional); maps to STMD's flat-M AnalyzeSimulationTaskAndObjectives (NASA M&S40/M&S43 unconditional Shalls).
+SIC,Analysis,analysis.engineering-task.higher-level,R,R,M,M,N,"Sec 3.4 'Analysis' group row: Recommended at CL1/CL2, Mandatory at CL3/CL4 -- context linkage to the parent engineering task."
+SIC,Analysis,analysis.engineering-task.specific,R,R,M,M,N,Same Analysis group pattern as engineering-task.higher-level.
+SIC,Analysis,analysis.simulation-task.further-requirements,R,R,M,M,N,Same Analysis group pattern; refinement content beyond the core (Mandatory-baseline) objective.
+SIC,Analysis,analysis.quality-aspects,R,R,M,M,N,Same Analysis group pattern; also named explicitly as one of the Basic Subset's 6 CL1-floor Recommended fields (Sec 3.4).
+SIC,Analysis,analysis.verification,R,R,M,M,N,Same Analysis group pattern.
+SIC,Analysis,analysis.validation,R,R,M,M,N,Same Analysis group pattern.
+SIC,Requirements,requirements.parameter.subject-information.parametrized-entity,M,M,M,M,N,SIC-Core-schema-Mandatory (unconditional); identifies which entity a parameter requirement applies to.
+SIC,Requirements,requirements.model.purpose-objectives,R,R,M,M,N,"Sec 3.4 'Requirements' group row, content bucket ('model/entity'): Recommended at CL1/CL2, Mandatory at CL3/CL4 -- maps to STMD's DefineModelRequirements family."
+SIC,Requirements,requirements.model.subject-information.modeled-entity,R,R,M,M,N,Same Requirements-content bucket as purpose-objectives.
+SIC,Requirements,requirements.model.effects-considered,R,R,M,M,N,Same Requirements-content bucket.
+SIC,Requirements,requirements.model.further-model-requirements,R,R,M,M,N,Same Requirements-content bucket.
+SIC,Requirements,requirements.parameter-value-distribution-function,R,R,M,M,N,"Requirements-content bucket (parameter-requirement content, not a QA sub-item) -- maps to STMD's DefineParameterRequirements."
+SIC,Requirements,requirements.test-case,R,R,M,M,N,"Requirements-content bucket, explicitly named in Sec 3.4's CL3 callout ('model/entity/test-case'); maps to STMD's DefineTestCaseRequirements (NASA M&S43)."
+SIC,Requirements,requirements.simulation-environment,R,R,M,M,N,Requirements-content bucket; maps to STMD's DefineSimulationEnvironmentRequirements.
+SIC,Requirements,requirements.simulation-integration,R,R,M,M,N,Requirements-content bucket; maps to STMD's DefineSimulationIntegrationRequirements.
+SIC,Requirements,requirements.model.confidentiality,O,R,M,M,N,"Sec 3.4 'Requirements' group row, QA-sub-item bucket: Optional at CL1 (explicitly called out, 'Optional (QA sub-items)'), Mandatory at CL3/CL4 with the rest of the group."
+SIC,Requirements,requirements.model.quality-requirements,O,R,M,M,N,Same QA-sub-item bucket as requirements.model.confidentiality.
+SIC,Requirements,requirements.parameter.confidentiality,O,R,M,M,N,Same QA-sub-item bucket.
+SIC,Requirements,requirements.parameter.quality-requirements,O,R,M,M,N,Same QA-sub-item bucket.
+SIC,Requirements,requirements.test-case.confidentiality,O,R,M,M,N,Same QA-sub-item bucket.
+SIC,Requirements,requirements.test-case.quality-requirements,O,R,M,M,N,Same QA-sub-item bucket.
+SIC,Requirements,requirements.simulation-environment.quality-requirements,O,R,M,M,N,Same QA-sub-item bucket.
+SIC,Requirements,requirements.simulation-integration.quality-requirements,O,R,M,M,N,Same QA-sub-item bucket.
+SIC,Requirements,requirements.quality-assurance,O,R,M,M,N,Same QA-sub-item bucket; maps to STMD's DefineQualityAssuranceRequirements.
+SIC,Requirements,requirements.verification,O,R,M,M,N,Same QA-sub-item bucket; maps to STMD's VerifyRequirements.
+SIC,Design,design.model,O,R,M,M,N,"Sec 3.4 'Design' group row, content bucket: Optional at CL1 (Design has no SIC-Core-Mandatory attributes at all), Mandatory at CL3/CL4 ('model/parameter/test-case design spec' explicitly named). Maps to STMD's DefineModelDesignSpecification."
+SIC,Design,design.parameter,O,R,M,M,N,Same Design-content bucket; maps to STMD's DefineParameterDesignSpecification.
+SIC,Design,design.test-case,O,R,M,M,N,"Same Design-content bucket, explicitly named at CL3; maps to STMD's DefineTestCaseDesignSpecification."
+SIC,Design,design.simulation-environment,O,R,M,M,N,"Design-content bucket (design-specification family, not QA/verification-result); maps to STMD's DefineSimulationEnvironmentDesignSpecification."
+SIC,Design,design.simulation-integration,O,R,M,M,N,Design-content bucket; maps to STMD's DefineSimulationIntegrationDesignSpecification.
+SIC,Design,design.model.quality-requirements,O,R,R,R,Y,"the process-record-authoritative rule ('process-schema wins', resolved and reconfirmed 2026-08-04): STMD/DTMD's own LifeCycleInformation/Signature is authoritative for QA sign-off, so this stays flat at Recommended past CL1 rather than being independently escalated."
+SIC,Design,design.parameter.quality-requirements,O,R,R,R,Y,Same the process-record-authoritative rule treatment as design.model.quality-requirements.
+SIC,Design,design.test-case.quality-requirements,O,R,R,R,Y,Same the process-record-authoritative rule treatment.
+SIC,Design,design.simulation-environment.quality-requirements,O,R,R,R,Y,Same the process-record-authoritative rule treatment.
+SIC,Design,design.simulation-integration.quality-requirements,O,R,R,R,Y,Same the process-record-authoritative rule treatment.
+SIC,Design,design.quality-assurance,O,R,R,R,Y,"Sec 3.4 explicitly names this as one of the QA/verification-result sub-items the process-record-authoritative rule caps at Recommended -- overlaps with STMD/DTMD's own LifeCycleInformation/Signature mechanism at CL3/CL4, which is authoritative per the process-record-authoritative rule, so this is not independently escalated."
+SIC,Design,design.verification,O,R,R,R,Y,Same the process-record-authoritative rule treatment as design.quality-assurance.
+SIC,Implementation,implementation.model,R,M,M,M,N,"Sec 3.4 'Implementation' group row (implemented model/parameter/environment identity, solver settings): Recommended (SIC Core default) at CL1, Mandatory from CL2. Maps to STMD's ImplementModel."
+SIC,Implementation,implementation.parameter,R,M,M,M,N,Same Implementation-identity bucket; maps to STMD's ImplementParameter.
+SIC,Implementation,implementation.test-case,R,M,M,M,N,Same Implementation-identity bucket; maps to STMD's ImplementTestCase.
+SIC,Implementation,implementation.simulation-environment,R,M,M,M,N,"Same Implementation-identity bucket; maps to STMD's ImplementSimulationEnvironment, also anchors the archival overlay's environment-pinning (P520 clause)."
+SIC,Implementation,implementation.simulation-integration,R,M,M,M,N,Same Implementation-identity bucket; maps to STMD's IntegrateSimulation.
+SIC,Implementation,implementation.simulation-integration.settings,R,M,M,M,N,"Explicitly named in Sec 3.4's group description ('solver settings'); same tier as the identity bucket, not treated as a lagging decoration."
+SIC,Implementation,implementation.model.confidentiality,O,R,M,M,N,Refinement decoration of implementation.model; one tier behind its base per the general decoration-lags-base convention used throughout this matrix.
+SIC,Implementation,implementation.model.quality,O,R,M,M,N,Same decoration-lag reasoning as implementation.model.confidentiality.
+SIC,Implementation,implementation.parameter.confidentiality,O,R,M,M,N,"Same decoration-lag reasoning, on implementation.parameter."
+SIC,Implementation,implementation.parameter.quality,O,R,M,M,N,Same decoration-lag reasoning.
+SIC,Implementation,implementation.test-case.confidentiality,O,R,M,M,N,"Same decoration-lag reasoning, on implementation.test-case."
+SIC,Implementation,implementation.test-case.quality,O,R,M,M,N,Same decoration-lag reasoning.
+SIC,Implementation,implementation.simulation-environment.quality,O,R,M,M,N,"Same decoration-lag reasoning, on implementation.simulation-environment."
+SIC,Implementation,implementation.simulation-integration.quality,O,R,M,M,N,"Same decoration-lag reasoning, on implementation.simulation-integration."
+SIC,Implementation,implementation.quality-assurance-results,R,R,R,R,Y,"Not part of Sec 3.4's named Implementation-group content ('identity, solver settings' only); this is exactly the QA/verdict attribute family the process-record-authoritative rule ('process-schema wins') caps at Recommended (its SIC-Core-schema default) -- STMD/DTMD's LifeCycleInformation/Signature is authoritative for this fact instead."
+SIC,Implementation,implementation.verdict,R,R,R,R,Y,Same the process-record-authoritative rule treatment as implementation.quality-assurance-results.
+SIC,Execution,execution.model,M,M,M,M,N,SIC-Core-schema-Mandatory (unconditional); maps to STMD's flat-M ExecuteSimulation (NASA M&S22-27 unconditional Shalls) -- which model was actually executed.
+SIC,Execution,execution.parameter,M,M,M,M,N,"SIC-Core-schema-Mandatory (unconditional); companion to execution.model, same Spine reasoning."
+SIC,Execution,execution.tool,M,M,M,M,N,"SIC-Core-schema-Mandatory (unconditional); companion to execution.model, same Spine reasoning."
+SIC,Execution,execution.test-case,R,R,M,M,N,"Folded into the Execution 'raw data/settings' bucket (Sec 3.4): Recommended at CL1/CL2, Mandatory at CL3/CL4 -- which test case was actually run."
+SIC,Execution,execution.data,R,R,M,M,N,"Sec 3.4 'Execution' group row, explicitly named ('raw data'): Recommended at CL1/CL2, Mandatory at CL3/CL4 ('raw data + settings')."
+SIC,Execution,execution.tool.settings,R,R,M,M,N,Explicitly named ('settings') in the same Sec 3.4 bucket as execution.data.
+SIC,Execution,execution.log,O,R,R,M,N,"Sec 3.4 explicitly separates log from raw-data/settings: Optional at CL1, only reaching Recommended at CL2/CL3 and Mandatory at CL4 ('log promoted to [Mandatory at] CL4')."
+SIC,Evaluation,evaluation.results,R,R,M,M,N,"Sec 3.4 'Evaluation' group row, explicitly named ('results'): Recommended at CL1/CL2, Mandatory at CL3/CL4 ('results only'). Maps to STMD's EvaluateSimulationResults."
+SIC,Evaluation,evaluation.quality-assurance,R,R,R,R,Y,"Sec 3.4's CL3 callout is 'results only' -- QA results/verdict are not named as escalating, consistent with the process-record-authoritative rule: same family as design.quality-assurance/implementation.quality-assurance-results, held flat Recommended because STMD/DTMD's Signature is authoritative."
+SIC,Evaluation,evaluation.verdict,R,R,R,R,Y,Same the process-record-authoritative rule treatment as evaluation.quality-assurance.
+SIC,Fulfillment,fulfillment.task-status,M,M,M,M,N,SIC-Core-schema-Mandatory (unconditional); maps to STMD's flat-M DecideSimulationObjectiveFulfillment / DTMD's DecideObjectiveFulfillment -- the Decision-Maker-facing handoff .
+SIC,Fulfillment,fulfillment.objectives,R,R,M,M,N,"Sec 3.4 'Fulfillment' group row, explicitly named at CL3 ('objectives fulfilled + evidence'): Recommended at CL1/CL2, Mandatory at CL3/CL4."
+SIC,Fulfillment,fulfillment.evidence,R,R,M,M,N,"Same Fulfillment bucket as fulfillment.objectives, explicitly named at CL3."
+SIC,Fulfillment,fulfillment.date,R,R,M,M,N,"Folded into the same Fulfillment bucket as objectives/evidence -- cheap administrative timestamp for the same handoff event, not a QA/verdict field."
+SIC,Fulfillment,fulfillment.quality,R,R,R,R,Y,"Not named in Sec 3.4's CL3 callout ('objectives fulfilled + evidence' only) -- 'Quality Fulfilled' is QA-verdict-adjacent, same the process-record-authoritative rule family as the other quality-assurance/verdict attributes, held flat Recommended because STMD/DTMD's Signature already carries this fact."
