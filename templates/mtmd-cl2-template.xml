@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mtmd:ModelingTaskMetaData xmlns:mtmd="http://ssp-standard.org/SSPTraceability1/ModelingTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" version="1.0" GUID="00000000-0000-4000-8000-000000000001" author="" fileversion="" copyright="" license="" generationTool="credible-process-tools (template generator)" generationDateAndTime="2026-09-05T00:00:00Z" description="Minimal conformant skeleton — replace every placeholder resource with real content" name="MTMD template CL2">
+  <mtmd:GeneralInformation>
+    <stc:Resource kind="document" type="text/markdown" source="resources/GeneralInformation.md"/>
+    <stc:Classification type="org.credible-process.core">
+      <stc:ClassificationEntry keyword="credibility.level">CL2</stc:ClassificationEntry>
+    </stc:Classification>
+  </mtmd:GeneralInformation>
+  <mtmd:AnalysisPhase>
+    <mtmd:AnalyzeModelingTaskAndObjectives>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeModelingTaskAndObjectives-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeModelingTaskAndObjectives-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeModelingTaskAndObjectives-Output.md"/>
+      </stc:Output>
+    </mtmd:AnalyzeModelingTaskAndObjectives>
+    <mtmd:VerifyAnalysis>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Output.md"/>
+      </stc:Output>
+    </mtmd:VerifyAnalysis>
+  </mtmd:AnalysisPhase>
+  <mtmd:RequirementsPhase>
+    <mtmd:DefineModelRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineModelRequirements-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineModelRequirements-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineModelRequirements-Output.md"/>
+      </stc:Output>
+    </mtmd:DefineModelRequirements>
+    <mtmd:DefineTestCaseRequirements>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineTestCaseRequirements-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineTestCaseRequirements-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineTestCaseRequirements-Output.md"/>
+      </stc:Output>
+    </mtmd:DefineTestCaseRequirements>
+  </mtmd:RequirementsPhase>
+  <mtmd:ImplementationPhase>
+    <mtmd:ImplementModel>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ImplementModel-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ImplementModel-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ImplementModel-Output.md"/>
+      </stc:Output>
+    </mtmd:ImplementModel>
+    <mtmd:ImplementTestCase>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ImplementTestCase-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ImplementTestCase-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ImplementTestCase-Output.md"/>
+      </stc:Output>
+    </mtmd:ImplementTestCase>
+    <mtmd:IntegrateSimulation>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/IntegrateSimulation-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/IntegrateSimulation-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/IntegrateSimulation-Output.md"/>
+      </stc:Output>
+    </mtmd:IntegrateSimulation>
+  </mtmd:ImplementationPhase>
+  <mtmd:FulfillmentPhase>
+    <mtmd:DecideModelingObjectiveFulfillment>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideModelingObjectiveFulfillment-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideModelingObjectiveFulfillment-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideModelingObjectiveFulfillment-Output.md"/>
+      </stc:Output>
+    </mtmd:DecideModelingObjectiveFulfillment>
+  </mtmd:FulfillmentPhase>
+</mtmd:ModelingTaskMetaData>

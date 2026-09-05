@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dtmd:DecisionTaskMetaData xmlns:dtmd="http://ssp-standard.org/SSPTraceability1/DecisionTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" version="1.0" GUID="00000000-0000-4000-8000-000000000001" author="" fileversion="" copyright="" license="" generationTool="credible-process-tools (template generator)" generationDateAndTime="2026-09-05T00:00:00Z" description="Minimal conformant skeleton — replace every placeholder resource with real content" name="DTMD template CL4">
+  <dtmd:GeneralInformation>
+    <stc:Resource kind="document" type="text/markdown" source="resources/GeneralInformation.md"/>
+  </dtmd:GeneralInformation>
+  <dtmd:AnalysisPhase>
+    <dtmd:AnalyzeDecisionTask>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeDecisionTask-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeDecisionTask-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeDecisionTask-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeDecisionTask-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:AnalyzeDecisionTask>
+    <dtmd:VerifyAnalysis>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifyAnalysis-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:VerifyAnalysis>
+  </dtmd:AnalysisPhase>
+  <dtmd:DefinitionPhase>
+    <dtmd:DefineSubTasks>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineSubTasks-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineSubTasks-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineSubTasks-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineSubTasks-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DefineSubTasks>
+    <dtmd:DefineResultQuality>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineResultQuality-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineResultQuality-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineResultQuality-Output.md"/>
+        <stc:Classification type="org.credible-process.core">
+          <stc:ClassificationEntry keyword="credibility.level">CL4</stc:ClassificationEntry>
+        </stc:Classification>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DefineResultQuality-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DefineResultQuality>
+    <dtmd:VerifySubTasks>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifySubTasks-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifySubTasks-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifySubTasks-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/VerifySubTasks-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:VerifySubTasks>
+  </dtmd:DefinitionPhase>
+  <dtmd:ExecutionPhase>
+    <dtmd:PerformSubTasks>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/PerformSubTasks-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/PerformSubTasks-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/PerformSubTasks-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/PerformSubTasks-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:PerformSubTasks>
+  </dtmd:ExecutionPhase>
+  <dtmd:EvaluationPhase>
+    <dtmd:EvaluateResults>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/EvaluateResults-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/EvaluateResults-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/EvaluateResults-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/EvaluateResults-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:EvaluateResults>
+    <dtmd:AssureResultQuality>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AssureResultQuality-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AssureResultQuality-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AssureResultQuality-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AssureResultQuality-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:AssureResultQuality>
+    <dtmd:DeriveResultQualityVerdict>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DeriveResultQualityVerdict-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DeriveResultQualityVerdict-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DeriveResultQualityVerdict-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DeriveResultQualityVerdict-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DeriveResultQualityVerdict>
+  </dtmd:EvaluationPhase>
+  <dtmd:FulfillmentPhase>
+    <dtmd:DecideObjectiveFulfillment>
+      <stc:Input>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideObjectiveFulfillment-Input.md"/>
+      </stc:Input>
+      <stc:Procedure>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideObjectiveFulfillment-Procedure.md"/>
+      </stc:Procedure>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideObjectiveFulfillment-Output.md"/>
+      </stc:Output>
+      <stc:Rationale>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideObjectiveFulfillment-Rationale.md"/>
+      </stc:Rationale>
+      <stc:Links>
+        <stc:Link xlink:type="extended">
+          <stc:Locator xlink:type="locator" xlink:href="#self"/>
+          <stc:Locator xlink:type="locator" xlink:href="#related"/>
+        </stc:Link>
+      </stc:Links>
+      <stc:LifeCycleInformation>
+        <stc:Drafted date="2026-09-05T00:00:00Z">
+          <stc:Responsible organization="Fixture Authoring" role="Simulation Engineer" name="Fixture Generator"/>
+          <ssc:Signature role="authenticity" type="application/xml"/>
+        </stc:Drafted>
+      </stc:LifeCycleInformation>
+    </dtmd:DecideObjectiveFulfillment>
+  </dtmd:FulfillmentPhase>
+</dtmd:DecisionTaskMetaData>

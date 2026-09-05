@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stmd:SimulationTaskMetaData xmlns:stmd="http://ssp-standard.org/SSPTraceability1/SimulationTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" version="1.0" GUID="00000000-0000-4000-8000-000000000001" author="" fileversion="" copyright="" license="" generationTool="credible-process-tools (template generator)" generationDateAndTime="2026-09-05T00:00:00Z" description="Minimal conformant skeleton — replace every placeholder resource with real content" name="STMD template CL1">
+  <stmd:GeneralInformation>
+    <stc:Resource kind="document" type="text/markdown" source="resources/GeneralInformation.md"/>
+    <stc:Classification type="org.credible-process.core">
+      <stc:ClassificationEntry keyword="credibility.level">CL1</stc:ClassificationEntry>
+    </stc:Classification>
+  </stmd:GeneralInformation>
+  <stmd:AnalysisPhase>
+    <stmd:AnalyzeSimulationTaskAndObjectives>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeSimulationTaskAndObjectives-Output.md"/>
+      </stc:Output>
+    </stmd:AnalyzeSimulationTaskAndObjectives>
+  </stmd:AnalysisPhase>
+  <stmd:ExecutionPhase>
+    <stmd:ExecuteSimulation>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/ExecuteSimulation-Output.md"/>
+      </stc:Output>
+    </stmd:ExecuteSimulation>
+  </stmd:ExecutionPhase>
+  <stmd:EvaluationPhase>
+    <stmd:EvaluateSimulationResults>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/EvaluateSimulationResults-Output.md"/>
+      </stc:Output>
+    </stmd:EvaluateSimulationResults>
+  </stmd:EvaluationPhase>
+  <stmd:FulfillmentPhase>
+    <stmd:DecideSimulationObjectiveFulfillment>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideSimulationObjectiveFulfillment-Output.md"/>
+      </stc:Output>
+    </stmd:DecideSimulationObjectiveFulfillment>
+  </stmd:FulfillmentPhase>
+</stmd:SimulationTaskMetaData>
