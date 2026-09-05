@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
         with: {path: credible-process-schemas}
       - uses: actions/checkout@v4
-        with: {repository: modelbased/credible-process-tools, path: credible-process-tools}  # pin a tag once released
+        with: {repository: MBILLC/credible-process-tools, path: credible-process-tools}  # pin a tag once released
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - run: pip install ./credible-process-tools
