@@ -2,6 +2,9 @@
 
 ## 0.1.0 — 2026-09-05 (initial extraction)
 
+Obligation matrices confirmed 2026-09-05: cell values as extracted; justifications rewritten to
+rest on the prostep CL definitions only (no NASA-STD-7009B reconciliation in this layer).
+
 Extracted from the LOTAR 2026 work project as an industry-neutral layer. Contents: vendored
 SSP-LS-Traceability process schemas (STMD/DTMD/MTMD/STC/SRMD), SIC Core and MIC Core; the
 `org.credible-process.core` vocabulary (`credibility.level` CL1–CL4 and companions); obligation

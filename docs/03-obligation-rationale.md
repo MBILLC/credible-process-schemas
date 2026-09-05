@@ -1,6 +1,6 @@
 # Obligation rationale, step by step
 
-*Generated from `matrices/process-profile-matrix.csv` — regenerate this file (`csp generate` does not; run `python3 docs/_gen_rationale.py` in the tools repo) when the matrix changes. M = mandatory, O = optional.*
+*Generated from `matrices/process-profile-matrix.csv` — regenerate this file when the matrix changes (the table is a rendering of the CSV; `csp generate` does not rewrite it). M = mandatory, O = optional.*
 
 ## Credible Decision Process (DTMD)
 
