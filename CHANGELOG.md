@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### extensions/modelica (2026-09-06)
+- A downstream profile for Modelica component libraries (docs/09 applied): vocabulary
+  `org.credible-process.modelica` (`record.role`, `family.id`, `credibility.assumptions-ref`,
+  `task.external-evidence`, ...), overlays MODELICA-VOC/OVL/STR/LIB, fixtures, and three documents:
+  the level a family record supports and the task-to-family level rule, the generated annotation
+  schema, granularity and sign-off. Core profiles, matrices and fixtures unchanged.
+
 ## 0.1.0 — 2026-09-05 (initial extraction)
 
 Obligation matrices confirmed 2026-09-05: cell values as extracted; justifications rewritten to

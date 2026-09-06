@@ -95,3 +95,10 @@ checked by STC-INT-110/111; cross-document ones by your tooling (this layer's ru
 ```
 
 Pin both by tag; see `07-conformance.md` for what a MAJOR bump means.
+
+## A worked downstream profile
+
+`extensions/modelica/` is this recipe applied to Modelica component libraries: its own vocabulary
+block (`org.credible-process.modelica`), four overlay Schematrons selected by the record's role,
+fixtures, and tooling (`csp modelica`) that adds the cross-document rules a library needs -- the
+level a family record *supports* versus the level a task *uses* (`extensions/modelica/docs/01`).
