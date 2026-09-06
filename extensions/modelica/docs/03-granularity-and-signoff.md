@@ -61,3 +61,21 @@ Output and Rationale resources, the life-cycle entry (`Verify*`/`Assure*` to `Va
 reports so the row leaves the table. `csp modelica unmet` lists what a level still needs, per
 record; `csp modelica signatures` verifies every signature against the certificates kept beside
 the records.
+
+## Requests and deliveries: the hand-off between a task and the library
+
+A simulation task can ask for what the library cannot yet give. When its gap report finds a QOI
+that selects a quantity no instantiated class offers under an effect (*not producible*) or needs an
+effect no class offers (*not established*), `csp modelica request` writes one request per such QOI
+under `tasks/<Task>/requests/`: which STMD asks (its GUID), which QOI and requirement ids, which
+instance, class and variable, which effect, over which operating domain and at which accuracy -- the
+last two are what hand the modeling side its validity-domain axes. The task's STMD carries the
+request as a `request` resource of `ImplementModel`; the family record of the class named consumes
+it as the Input of its analysis and derives a model and a test-case requirement from it.
+
+`csp modelica deliver` closes the loop once the class offers every requested effect with claims a
+test model establishes: `<id>.delivery.json` names the claim ids, the establishing test models and
+the family record's GUID; the STMD takes it as an `ImplementModel` Input (`delivery`) and its
+DerivationChain gains the family record's GUID. `csp modelica requests` is the acceptance: every
+request complete and bound to its STMD, every delivery's claims resolving, and the gap report
+backing the QOI -- or reporting it *outside domain*, which is a legitimate outcome, never hidden.
