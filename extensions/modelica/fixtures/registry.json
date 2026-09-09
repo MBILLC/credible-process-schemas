@@ -1,0 +1,51 @@
+[
+  {
+    "profile": "modelica-vocabulary.sch + role overlay",
+    "record": "MTMD",
+    "level": "CL2",
+    "valid": [
+      "mtmd-modelica-family-cl2.xml"
+    ],
+    "invalid": [
+      "mtmd-modelica-family-cl2-missing-DefineParameterRequirements.xml",
+      "mtmd-modelica-family-cl2-missing-DefineTestCaseDesignSpecification.xml",
+      "mtmd-modelica-family-cl2-without-level.xml",
+      "mtmd-modelica-family-cl2-without-role.xml",
+      "mtmd-modelica-family-cl2-bad-role.xml"
+    ]
+  },
+  {
+    "profile": "modelica-vocabulary.sch + role overlay",
+    "record": "MTMD",
+    "level": "CL1",
+    "valid": [
+      "mtmd-modelica-structural-cl1.xml"
+    ],
+    "invalid": [
+      "mtmd-modelica-structural-cl1-with-test-case.xml"
+    ]
+  },
+  {
+    "profile": "modelica-vocabulary.sch + role overlay",
+    "record": "MTMD",
+    "level": "CL1",
+    "valid": [
+      "mtmd-modelica-library-cl1.xml"
+    ],
+    "invalid": [
+      "mtmd-modelica-library-cl1-without-chain.xml"
+    ]
+  },
+  {
+    "profile": "modelica-vocabulary.sch + role overlay",
+    "record": "STMD",
+    "level": "CL2",
+    "valid": [
+      "stmd-modelica-task-cl2.xml"
+    ],
+    "invalid": [
+      "stmd-modelica-task-cl2-missing-DefineParameterRequirements.xml",
+      "stmd-modelica-task-cl2-bad-external-evidence.xml"
+    ]
+  }
+]

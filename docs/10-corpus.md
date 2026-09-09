@@ -15,3 +15,7 @@ CL3 and CL4 require life-cycle entries with signatures that no public instance c
 record authored today has to add them (`csp sign`). Where a public instance carries
 `stc:Classification` blocks of prostep's own types (`org.prostep.srmd.*`), those are untouched by
 this layer's rules.
+
+A further corpus, produced with this layer rather than found: the RotorDynamics Modelica library's
+records (six family MTMDs, one library MTMD, one task STMD), generated from the library's own
+evidence annotations by `csp modelica` -- see `extensions/modelica/`.

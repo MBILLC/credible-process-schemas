@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mtmd:ModelingTaskMetaData xmlns:mtmd="http://ssp-standard.org/SSPTraceability1/ModelingTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" version="1.0" GUID="00000000-0000-4000-8000-000000000001" author="" fileversion="" copyright="" license="" generationTool="credible-process-tools (template generator)" generationDateAndTime="2026-09-05T00:00:00Z" description="Minimal conformant skeleton — replace every placeholder resource with real content" name="Probe library (fixture)">
+  <mtmd:GeneralInformation>
+    <stc:Resource kind="document" type="text/markdown" source="resources/GeneralInformation.md"/>
+    <stc:Classification type="org.credible-process.core">
+      <stc:ClassificationEntry keyword="credibility.level">CL1</stc:ClassificationEntry>
+    </stc:Classification>
+  <stc:Classification type="org.credible-process.modelica"><stc:ClassificationEntry keyword="record.role">library</stc:ClassificationEntry><stc:ClassificationEntry keyword="library.name">Probe</stc:ClassificationEntry><stc:ClassificationEntry keyword="library.version">1.0.0</stc:ClassificationEntry></stc:Classification></mtmd:GeneralInformation>
+  <mtmd:AnalysisPhase>
+    <mtmd:AnalyzeModelingTaskAndObjectives>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/AnalyzeModelingTaskAndObjectives-Output.md"/>
+      </stc:Output>
+    </mtmd:AnalyzeModelingTaskAndObjectives>
+  </mtmd:AnalysisPhase>
+  <mtmd:FulfillmentPhase>
+    <mtmd:DecideModelingObjectiveFulfillment>
+      <stc:Output>
+        <stc:Resource kind="document" type="text/markdown" source="resources/DecideModelingObjectiveFulfillment-Output.md"/>
+      </stc:Output>
+    </mtmd:DecideModelingObjectiveFulfillment>
+  </mtmd:FulfillmentPhase>
+</mtmd:ModelingTaskMetaData>
