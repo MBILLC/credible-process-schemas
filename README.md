@@ -38,6 +38,7 @@ on top of the Python API, fragment references, CI. `docs/07-conformance.md` defi
 | `docs/08-matrices-fixtures-reference.md` | column-by-column reference of the matrices, config and fixture registry |
 | `docs/09-building-on-this-layer.md` | recipe for downstream profiles |
 | `docs/10-corpus.md` | known real-world records |
+| `docs/11-library-context-of-use.md` | credibility-level adequacy across records (`csp adequacy`), the library context-of-use declaration, where it lives |
 | `docs/glossary.md` | terms |
 | `vocabulary/Credible_Process_Core_Vocabulary.md` | the five keywords, values, attachment points |
 | `templates/README.md`, `examples/ev-range/README.md`, `schemas/upstream/NOTICE.md` | templates, worked example, upstream provenance and licences |

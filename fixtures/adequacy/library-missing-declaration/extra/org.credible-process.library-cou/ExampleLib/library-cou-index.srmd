@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srmd:SimulationResourceMetaData xmlns:srmd="http://ssp-standard.org/SSPTraceability1/SimulationResourceMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" version="1.0" name="ExampleLib library-cou index">
+  <stc:Classification type="org.credible-process.library-cou-index"><stc:ClassificationEntry keyword="index.library">ExampleLib</stc:ClassificationEntry><stc:ClassificationEntry keyword="index.library-version">2.1.0</stc:ClassificationEntry><stc:ClassificationEntry keyword="index.model">ExampleLib.Rotational.Inertia</stc:ClassificationEntry></stc:Classification>
+</srmd:SimulationResourceMetaData>

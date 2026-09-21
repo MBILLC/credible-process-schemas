@@ -86,11 +86,17 @@ Give the elements you want to address an `id` attribute and use the fragment con
 checked by STC-INT-110/111; cross-document ones by your tooling (this layer's runner resolves the
 `.dtmd` reference from `GeneralInformation`; extend `detect_level`/your checker for others).
 
+## 4a. Publishing a library
+
+A model library is a profile on this layer too: it ships one context-of-use declaration per exported
+model under `Resources/credible-process/` (Modelica) or `extra/org.credible-process.library-cou/<Library>/`
+(FMU/SSP) — see `11-library-context-of-use.md` and `vocabulary/Library_COU_Vocabulary.md`.
+
 ## 5. CI
 
 ```yaml
-- run: pip install "credible-process-tools @ git+https://github.com/MBILLC/credible-process-tools@v0.1.0"
-- run: git clone --depth 1 --branch v0.1.0 https://github.com/MBILLC/credible-process-schemas ../credible-process-schemas
+- run: pip install "credible-process-tools @ git+https://github.com/MBILLC/credible-process-tools@v0.2.0"
+- run: git clone --depth 1 --branch v0.2.0 https://github.com/MBILLC/credible-process-schemas ../credible-process-schemas
 - run: csp check records/*.stmd records/*.dtmd && python acme_check.py records/
 ```
 

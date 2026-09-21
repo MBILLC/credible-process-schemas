@@ -10,6 +10,7 @@
 | `CDP-DTMD-CLn` | `profiles/dtmd-cln.sch` | DTMD at level n |
 | `CMP-MTMD-CLn` | `profiles/mtmd-cln.sch` | MTMD at level n |
 | `SIC-CLn` | `profiles/sic-core-cln.sch` | SRMD with a SIC Core block, at level n |
+| `CP-LCOU` | `profiles/library-cou.sch` | SRMD carrying an `org.credible-process.library-cou` or `-index` block (a library context-of-use declaration) |
 
 A record **conforms at level n** if it validates against its upstream XSD and produces no failed
 assert from `STC-INT`, `CP-CORE` and its record type's `CLn` profile. `profiles/profiles.json` is

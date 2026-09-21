@@ -18,6 +18,9 @@ This layer operationalises that in three places:
    not a role violation). The comparison is at person level (certificate identity), not at
    claimed-role level: two roles claimed by one certificate is exactly the case to catch.
 
+`csp adequacy` (`11-library-context-of-use.md`) is the layer's second cross-document check and follows
+the same linkage.
+
 The linkage the check follows is the one the records themselves carry: a DTMD's `DefineSubTasks/Output`
 references the STMD(s) it spawned (`stc:ResourceReference`), and the STMD's `GeneralInformation`
 references its governing DTMD back. The MTMD is reached from `ImplementModel/Output` in the same way.

@@ -183,5 +183,33 @@
     "invalid": [
       "sic-core-cl4-missing-fulfillment-date.xml"
     ]
+  },
+  {
+    "profile": "library-cou.sch",
+    "record": "SRMD",
+    "level": null,
+    "valid": [
+      "library-cou-declaration.xml",
+      "library-cou-declaration-cl1-no-evidence.xml",
+      "library-cou-index.xml"
+    ],
+    "invalid": [
+      "library-cou-declaration-missing-evidence-ref.xml",
+      "library-cou-declaration-bad-ceiling.xml",
+      "library-cou-declaration-unknown-keyword.xml",
+      "library-cou-index-no-models.xml"
+    ]
+  },
+  {
+    "profile": "credible-process-core.sch (adequacy override)",
+    "record": "STMD",
+    "level": "CL3",
+    "valid": [
+      "stmd-cl3-adequacy-override.xml"
+    ],
+    "invalid": [
+      "stmd-cl3-adequacy-override-malformed.xml",
+      "stmd-cl3-adequacy-override-no-signoff.xml"
+    ]
   }
 ]

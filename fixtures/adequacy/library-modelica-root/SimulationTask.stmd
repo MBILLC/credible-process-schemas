@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stmd:SimulationTaskMetaData xmlns:stmd="http://ssp-standard.org/SSPTraceability1/SimulationTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" version="1.0" name="fixture" GUID="a3bc9dd5-0543-53e9-bc87-f662a85e4f4e">
+  <stmd:GeneralInformation><stc:ResourceReference xlink:href="DecisionTask.dtmd"/><stc:Resource kind="document" type="text/markdown" source="gi.md" id="s-gi"/></stmd:GeneralInformation>
+  <stmd:ImplementationPhase>
+    <stmd:ImplementModel>
+      <stc:Output><stc:ResourceReference xlink:href="ModelingTask.mtmd"/></stc:Output>
+      
+    </stmd:ImplementModel>
+  </stmd:ImplementationPhase>
+</stmd:SimulationTaskMetaData>

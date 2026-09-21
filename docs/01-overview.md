@@ -19,10 +19,10 @@ and references trustworthy, fixtures that pin the behaviour, and a worked exampl
 ```
 schemas/upstream/        vendored SSP-LS-Traceability, SIC Core, MIC Core (never edited)
 schemas/                 SRMDCredibleProcessCore.xsd — CredibilityLevelType, ModelValidationModeType
-vocabulary/              the five org.credible-process.core keywords
+vocabulary/              the org.credible-process.core keywords; the library context-of-use vocabulary
 matrices/                the source of truth: step, particle and SIC Core obligations per level
 profiles/                GENERATED: stmd-cl1..4, dtmd-cl1..4, mtmd-cl1..4, sic-core-cl1..4;
-                         hand-authored: stc-integrity.sch, credible-process-core.sch; profiles.json
+                         hand-authored: stc-integrity.sch, credible-process-core.sch, library-cou.sch; profiles.json
 fixtures/                VALID/INVALID pairs per profile, with the exact expected assert ids
 examples/ev-range/       a CL3 decision + simulation + two modeling records, signed
 docs/                    this documentation

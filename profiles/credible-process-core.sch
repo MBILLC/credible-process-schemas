@@ -17,11 +17,26 @@
   <ns prefix="stc" uri="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon"/>
 
   <pattern id="cp-core-allowed-keywords">
-    <let name="allowed" value="'|credibility.level|credibility.assessment-ref|model-validation.mode|signature.method|signature.validation-note|'"/>
+    <let name="allowed" value="'|credibility.level|credibility.assessment-ref|credibility.adequacy-override|model-validation.mode|signature.method|signature.validation-note|'"/>
     <rule context="//stc:Classification[@type='org.credible-process.core']/stc:ClassificationEntry" id="CP-CORE-001">
       <assert test="contains($allowed, concat('|', @keyword, '|'))" id="CP-CORE-001a" role="error">
         Unknown org.credible-process.core keyword '<value-of select="@keyword"/>'. Allowed: credibility.level,
-        credibility.assessment-ref, model-validation.mode, signature.method, signature.validation-note.
+        credibility.assessment-ref, credibility.adequacy-override, model-validation.mode, signature.method,
+        signature.validation-note.
+      </assert>
+    </rule>
+  </pattern>
+
+  <pattern id="cp-core-adequacy-override-value">
+    <rule context="//stc:Classification[@type='org.credible-process.core']/stc:ClassificationEntry[@keyword='credibility.adequacy-override']" id="CP-CORE-006">
+      <assert test="string-length(.) = 7 and substring(., 4, 1) = '&gt;' and contains('|CL1|CL2|CL3|CL4|', concat('|', substring(., 1, 3), '|')) and contains('|CL1|CL2|CL3|CL4|', concat('|', substring(., 5, 3), '|')) and substring(., 3, 1) &gt; substring(., 7, 1)" id="CP-CORE-006a" role="error">
+        credibility.adequacy-override must read '&lt;task level&gt;>&lt;model level&gt;' with the task level the
+        higher one, e.g. CL3>CL2 (found '<value-of select="."/>').
+      </assert>
+      <assert test="../../stc:LifeCycleInformation[stc:Approved or stc:Validated]" id="CP-CORE-006b" role="error">
+        credibility.adequacy-override sits on the citing step itself (ImplementModel of an STMD,
+        DefineModelRequirements of an MTMD) and that step must carry an Approved or Validated life-cycle
+        entry; its signature is STC-INT-100, the mismatch it acknowledges is checked by csp adequacy.
       </assert>
     </rule>
   </pattern>

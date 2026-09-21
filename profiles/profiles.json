@@ -1,5 +1,5 @@
 {
-  "schemas_version": "0.1.0",
+  "schemas_version": "0.2.0",
   "classification_type": "org.credible-process.core",
   "levels": [
     "CL1",

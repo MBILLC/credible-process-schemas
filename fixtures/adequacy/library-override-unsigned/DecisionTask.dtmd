@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dtmd:DecisionTaskMetaData xmlns:dtmd="http://ssp-standard.org/SSPTraceability1/DecisionTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" version="1.0" name="fixture" GUID="ebe7da0b-0fb4-5d94-b464-42a3166d4649">
+  <dtmd:GeneralInformation><stc:Resource kind="document" type="text/markdown" source="gi.md" id="d-gi"/></dtmd:GeneralInformation>
+  <dtmd:DefinitionPhase>
+    <dtmd:DefineResultQuality>
+      <stc:Output><stc:Resource kind="document" type="text/markdown" source="drq.md" id="d-drq"/>
+        <stc:Classification type="org.credible-process.core"><stc:ClassificationEntry keyword="credibility.level">CL3</stc:ClassificationEntry></stc:Classification>
+      </stc:Output>
+    </dtmd:DefineResultQuality>
+  </dtmd:DefinitionPhase>
+</dtmd:DecisionTaskMetaData>

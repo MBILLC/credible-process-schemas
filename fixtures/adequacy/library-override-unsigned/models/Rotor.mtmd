@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mtmd:ModelingTaskMetaData xmlns:mtmd="http://ssp-standard.org/SSPTraceability1/ModelingTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" version="1.0" name="fixture" GUID="ef55328f-0b5a-5595-9cc8-a48ccc143f73">
+  <mtmd:GeneralInformation><stc:Resource kind="document" type="text/markdown" source="gi.md" id="m-gi"/><stc:Classification type="org.credible-process.core"><stc:ClassificationEntry keyword="credibility.level">CL3</stc:ClassificationEntry><stc:ClassificationEntry keyword="model-validation.mode">internal</stc:ClassificationEntry></stc:Classification></mtmd:GeneralInformation>
+  <mtmd:RequirementsPhase>
+    <mtmd:DefineModelRequirements>
+      <stc:Input><stc:ResourceReference xlink:href="../extra/org.credible-process.library-cou/ExampleLib/ExampleLib.Rotational.Inertia.srmd"/><stc:ResourceReference xlink:href="../extra/org.credible-process.library-cou/ExampleLib/ExampleLib.Rotational.JournalBearing.srmd"/><stc:Resource kind="document" type="text/markdown" source="dmr-in.md" id="m-dmr-in"/></stc:Input>
+      
+    <stc:Classification type="org.credible-process.core"><stc:ClassificationEntry keyword="credibility.adequacy-override">CL3>CL2</stc:ClassificationEntry></stc:Classification></mtmd:DefineModelRequirements>
+  </mtmd:RequirementsPhase>
+</mtmd:ModelingTaskMetaData>

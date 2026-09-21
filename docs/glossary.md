@@ -15,5 +15,8 @@
 | Life-cycle entry | one of `Drafted`/`Defined`/`Validated`/`Approved`/`Archived`/`Retracted` under a step's `LifeCycleInformation`; signed by a named role |
 | Decision maker / simulation engineer | the two roles the framework keeps separate: the one who assigns the level and accepts the result vs. the one who does the task |
 | Attestation (`externally-attested`) | an MTMD QA step satisfied by a signed life-cycle entry instead of locally populated evidence, for library models validated elsewhere |
+| Ceiling | the highest credibility level a model's own evidence supports: `credibility.level` on an MTMD, `cou.credibility-ceiling` in a library declaration |
+| Context-of-use declaration | an SRMD per exported library model (`org.credible-process.library-cou`): intended use, validity domain, excluded uses, ceiling, evidence — ASME VVUQ's COU at publication time |
+| Adequacy | a task's level does not exceed the ceiling of the model it cites, nor a model's level the ceilings of its library models; checked across documents by `csp adequacy` |
 | Fragment reference | `href="file#id"` addressing an element by its `id` attribute |
 | Overlay | a downstream Schematron file run after this layer's, adding obligations |

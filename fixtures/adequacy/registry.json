@@ -1,0 +1,41 @@
+{
+  "adequate-direct": {
+    "ADEQUATE": 1
+  },
+  "inadequate-direct": {
+    "INADEQUATE": 1
+  },
+  "inherited-single-lineage": {
+    "ADEQUATE": 1
+  },
+  "fan-in-self-stated": {
+    "ADEQUATE": 1,
+    "INADEQUATE": 1
+  },
+  "fan-in-inherited": {
+    "UNRESOLVABLE": 2
+  },
+  "library-weakest-link": {
+    "ADEQUATE": 1,
+    "INADEQUATE": 2
+  },
+  "library-override": {
+    "ADEQUATE": 1,
+    "OVERRIDDEN": 2
+  },
+  "library-override-unsigned": {
+    "ADEQUATE": 1,
+    "INADEQUATE": 2
+  },
+  "library-missing-declaration": {
+    "ADEQUATE": 2,
+    "UNRESOLVABLE": 1
+  },
+  "library-modelica-root": {
+    "ADEQUATE": 2
+  },
+  "library-model-id-mismatch": {
+    "ADEQUATE": 1,
+    "UNRESOLVABLE": 1
+  }
+}

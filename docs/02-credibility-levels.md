@@ -37,6 +37,13 @@ prescribes *that* the level is assessed and recorded — and that the assessment
 (`credibility.assessment-ref`) — but never *how* the assessment is done: prostep leaves the method to
 company practice (FMEA and the like), and so does this layer.
 
+## Reuse across tasks
+
+A level is assigned to a task; a model is reused by many. An MTMD's `credibility.level` is therefore
+read as the *ceiling* its evidence supports, a library model publishes its ceiling and context of use
+in a declaration, and `csp adequacy` checks that no task cites a model — and no model a library model —
+above that ceiling. See `11-library-context-of-use.md`.
+
 ## SIC Core
 
 Where an SRMD carries the prostep SIC Core block (`org.mic-core.sic-core`), `sic-core-cl*.sch`
