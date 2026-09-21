@@ -25,6 +25,10 @@
   `stmd-cl3-adequacy-override-*` VALID/INVALID pairs.
 - Docs: `docs/11-library-context-of-use.md`; cross-links in 01, 02, 05, 07, 08, 09, glossary, README.
 - Profiles regenerated only for the version stamp; no matrix cell changed.
+- 2026-09-21, after merging with the Modelica extension: `docs/11` §4a relates `csp adequacy` to LEVEL-001..004
+  (external evidence accepted only when signed off; structural/library records INFO); the declarations are
+  what `csp modelica emit cou` generates from a library's evidence; four Modelica-idiom adequacy fixtures
+  (15 cases); `extensions/modelica/docs/01` cross-references the core check.
 
 ## 0.1.0 — 2026-09-05 (initial extraction)
 

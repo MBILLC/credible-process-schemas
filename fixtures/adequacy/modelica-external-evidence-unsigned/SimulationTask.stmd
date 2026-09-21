@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stmd:SimulationTaskMetaData xmlns:stmd="http://ssp-standard.org/SSPTraceability1/SimulationTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" version="1.0" name="fixture" GUID="618e5373-22c2-53f4-9b99-5f9897fab11f">
+  <stmd:GeneralInformation><stc:ResourceReference xlink:href="DecisionTask.dtmd"/><stc:Resource kind="document" type="text/markdown" source="gi.md" id="s-gi"/><stc:Classification type="org.credible-process.modelica"><stc:ClassificationEntry keyword="record.role">task</stc:ClassificationEntry><stc:ClassificationEntry keyword="task.external-evidence">validation</stc:ClassificationEntry><stc:ClassificationEntry keyword="task.external-evidence-ref">s-ext</stc:ClassificationEntry></stc:Classification></stmd:GeneralInformation>
+  <stmd:ImplementationPhase>
+    <stmd:ImplementModel>
+      <stc:Input><stc:ResourceReference xlink:href="records/Lib-bearings.mtmd"/></stc:Input>
+      
+    </stmd:ImplementModel>
+  </stmd:ImplementationPhase>
+  <stmd:EvaluationPhase>
+    <stmd:EvaluateSimulationResults>
+      <stc:Output><stc:Resource kind="document" type="text/markdown" source="validation-against-rig.md" id="s-ext"/></stc:Output>
+      
+    </stmd:EvaluateSimulationResults>
+  </stmd:EvaluationPhase>
+</stmd:SimulationTaskMetaData>

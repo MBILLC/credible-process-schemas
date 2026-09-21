@@ -52,6 +52,11 @@ The rule is cross-document, so it is the tooling's, not Schematron's (`docs/09` 
 | LEVEL-003 | a `structural` record reached from a task (referenced, or through a family's classes) is reported whatever its level; it is excluded from LEVEL-001 and from the library record's level | INFO |
 | LEVEL-004 | the `library` record's `DerivationChain` names every family record's current GUID, and its level is the minimum over the physics families | FAIL |
 
+The core's `csp adequacy` (core `docs/11`) applies LEVEL-001 and LEVEL-003 to any package without
+this extension's configuration, with one difference: the external-evidence exception is accepted
+only when the step holding `task.external-evidence-ref` carries a signed Approved/Validated entry —
+an attested exception, not a declared one.
+
 ## What a level costs a family record
 
 The core's obligations apply unchanged: at CL1 the record needs `GeneralInformation`, the analysis

@@ -37,5 +37,17 @@
   "library-model-id-mismatch": {
     "ADEQUATE": 1,
     "UNRESOLVABLE": 1
+  },
+  "modelica-family-input-adequate": {
+    "ADEQUATE": 1
+  },
+  "modelica-external-evidence-signed": {
+    "OVERRIDDEN": 1
+  },
+  "modelica-external-evidence-unsigned": {
+    "INADEQUATE": 1
+  },
+  "modelica-structural-info": {
+    "INFO": 1
   }
 }

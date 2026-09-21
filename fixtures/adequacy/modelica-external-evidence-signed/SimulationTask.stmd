@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stmd:SimulationTaskMetaData xmlns:stmd="http://ssp-standard.org/SSPTraceability1/SimulationTaskMetaData" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" version="1.0" name="fixture" GUID="4b0cfbbd-c69f-53e3-ad6a-d24107438ebe">
+  <stmd:GeneralInformation><stc:ResourceReference xlink:href="DecisionTask.dtmd"/><stc:Resource kind="document" type="text/markdown" source="gi.md" id="s-gi"/><stc:Classification type="org.credible-process.modelica"><stc:ClassificationEntry keyword="record.role">task</stc:ClassificationEntry><stc:ClassificationEntry keyword="task.external-evidence">validation</stc:ClassificationEntry><stc:ClassificationEntry keyword="task.external-evidence-ref">s-ext</stc:ClassificationEntry></stc:Classification></stmd:GeneralInformation>
+  <stmd:ImplementationPhase>
+    <stmd:ImplementModel>
+      <stc:Input><stc:ResourceReference xlink:href="records/Lib-bearings.mtmd"/></stc:Input>
+      
+    </stmd:ImplementModel>
+  </stmd:ImplementationPhase>
+  <stmd:EvaluationPhase>
+    <stmd:EvaluateSimulationResults>
+      <stc:Output><stc:Resource kind="document" type="text/markdown" source="validation-against-rig.md" id="s-ext"/></stc:Output>
+      <stc:LifeCycleInformation><stc:Approved date="2026-09-21T00:00:00Z"><stc:Responsible organization="Fixture" role="Simulation Engineer" name="F. Ixture"/><ssc:Signature role="suitability" type="application/xml"><ssc:Content><ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference URI=""><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>ZmFrZQ==</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>ZmFrZQ==</ds:SignatureValue></ds:Signature></ssc:Content></ssc:Signature></stc:Approved></stc:LifeCycleInformation>
+    </stmd:EvaluateSimulationResults>
+  </stmd:EvaluationPhase>
+</stmd:SimulationTaskMetaData>
