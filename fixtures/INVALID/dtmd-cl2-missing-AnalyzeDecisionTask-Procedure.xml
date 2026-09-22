@@ -19,7 +19,7 @@
       </stc:Rationale>
       <stc:LifeCycleInformation>
         <stc:Drafted date="2026-08-04T00:00:00Z">
-          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+          <stc:Responsible organization="Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
         <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
       </stc:LifeCycleInformation>
     </dtmd:AnalyzeDecisionTask>
@@ -40,7 +40,7 @@
       </stc:Rationale>
       <stc:LifeCycleInformation>
         <stc:Drafted date="2026-08-04T00:00:00Z">
-          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+          <stc:Responsible organization="Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
         <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
       </stc:LifeCycleInformation>
     </dtmd:DefineSubTasks>
@@ -62,7 +62,7 @@
       </stc:Rationale>
       <stc:LifeCycleInformation>
         <stc:Drafted date="2026-08-04T00:00:00Z">
-          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+          <stc:Responsible organization="Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
         <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
       </stc:LifeCycleInformation>
     </dtmd:DefineResultQuality>
@@ -83,7 +83,7 @@
       </stc:Rationale>
       <stc:LifeCycleInformation>
         <stc:Drafted date="2026-08-04T00:00:00Z">
-          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+          <stc:Responsible organization="Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
         <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
       </stc:LifeCycleInformation>
     </dtmd:PerformSubTasks>
@@ -104,7 +104,7 @@
       </stc:Rationale>
       <stc:LifeCycleInformation>
         <stc:Drafted date="2026-08-04T00:00:00Z">
-          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+          <stc:Responsible organization="Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
         <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
       </stc:LifeCycleInformation>
     </dtmd:EvaluateResults>
@@ -125,7 +125,7 @@
       </stc:Rationale>
       <stc:LifeCycleInformation>
         <stc:Drafted date="2026-08-04T00:00:00Z">
-          <stc:Responsible organization="LOTAR Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
+          <stc:Responsible organization="Fixture Authoring" role="Decision Maker" name="Fixture Generator"/>
         <ssc:Signature xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" role="authenticity" type="application/xml"/></stc:Drafted>
       </stc:LifeCycleInformation>
     </dtmd:DecideObjectiveFulfillment>

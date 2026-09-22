@@ -1,55 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    STATUS (reversed 2026-08-04, T-24, LOTAR_Risk_Profile_Process_Plan_2026-07-24.md Phase G):
-    moved out of WaitForLater/ into the project root, matching SRMDMICCore.xsd's convention. The
-    2026-07-20 "disregarded for now" status is superseded: OD-16 (multi-Classification-block
-    architecture for combining MIC Core + SIC Core + LOTAR Core) is resolved (D-16, 2026-08-04) and
-    SIC Core is now in active scope for this project's risk-profile work (§3.4). A copy remains
-    under WaitForLater/ from before this move; this file at the project root is the one in active
-    use going forward.
-
-    Original 2026-07-20 status note, for history: "disregarded for the mandatory LOTAR Core
-    baseline for now. MIC Core + SRMDLOTARCore_Common.xsd/_P515.xsd/_P520.xsd are treated as
-    sufficient coverage."
-
-    Re-verification (2026-08-04, T-24, checked rather than assumed): `lxml.isoschematron.Schematron`
-    against this file at its new location fails with `XSLTApplyError: Cannot resolve URI
-    https://www.w3.org/XML/2008/06/xlink.xsd`, confirmed this is NOT a regression introduced by
-    the move: the sibling `SRMDMICCore.xsd` (untouched, same directory, same convention) fails with
-    the exact same error when checked the same way. Both files' embedded Schematron extraction
-    depends on resolving the W3C xlink schema over the network, which this environment does not
-    permit, a pre-existing, environment-specific limitation shared by every file in this project
-    that transitively imports the W3C xlink schema, not something specific to SIC Core or to this
-    move.
-
     Source: https://raw.githubusercontent.com/MIC-Core/SIC-Core/main/schemas/SRMDSICCore.xsd
     Referenced from: https://mic-core.github.io/SIC-Core/main/#_xml_srmd_schema_for_sic_core
-    (Appendix A, "XML SRMD-Schema for SIC Core", of the SIC Core Specification, retrieved 2026-07-17.)
+    (Appendix A, "XML SRMD-Schema for SIC Core", of the SIC Core Specification), retrieved 2026-07-17.
 
-    SIC Core is a sibling specification to MIC Core (compare SRMDMICCore.xsd, saved alongside this
-    file): same producing organization and same SRMD/Classification/ClassificationEntry mechanism,
-    but a much larger, phase-structured attribute set (Administrative Data, Analysis, Requirements,
-    Design, Implementation, Execution, Evaluation, Fulfillment) with per-attribute Obligation levels
-    (Mandatory/Recommended/Optional) and composite attributes with dotted sub-attribute keywords
-    (e.g. "administrative.simulation-task", "administrative.simulation-task.name"). Like
-    SRMDMICCore.xsd, this file defines no new elements itself: it xs:includes the base SRMD
-    structural schema and adds Schematron rules constraining Classification/ClassificationEntry
-    under Classification[@type='org.mic-core.sic-core'] to this fixed keyword set.
+    SIC Core is a sibling specification to MIC Core (same producing organization, same
+    SRMD/Classification mechanism) with a larger, phase-structured attribute set (Administrative
+    Data, Analysis, Requirements, Design, Implementation, Execution, Evaluation, Fulfillment),
+    per-attribute obligations (Mandatory/Recommended/Optional) and dotted sub-attribute keywords.
+    It defines no new elements: it xs:includes SRMD.xsd and adds embedded Schematron rules for
+    Classification[@type='org.mic-core.sic-core']. This layer's level-scaled promotion of SIC Core
+    attributes is in matrices/sic-core-profile-matrix.csv, enforced by profiles/sic-core-cl1..4.sch.
 
-    Dependency chain: SRMDSICCore.xsd includes SRMD.xsd, which imports STC.xsd (SSPTraceabilityCommon)
-    and (unresolved) SystemStructureCommon.xsd. The upstream include target for SRMD.xsd has moved
-    to the official Modelica Association project at
-    https://modelica.github.io/ssp-ls-traceability/main/SRMD.xsd (successor location to the
-    pmsfit/SSPTraceability repo used for the MIC Core baseline) but its content, and that of the
-    STC.xsd it in turn imports, was verified byte-identical to the SRMD.xsd / STC.xsd already saved
-    in this project for the MIC Core baseline, so those two files are reused here rather than
-    duplicated. See SRMDMICCore.xsd for the rationale on leaving SystemStructureCommon.xsd and the
-    W3C xlink schema unresolved.
+    The upstream include target has moved to https://modelica.github.io/ssp-ls-traceability/main/SRMD.xsd
+    (successor of the pmsfit/SSPTraceability location); its content, and that of STC.xsd, was
+    verified byte-identical to the SRMD.xsd/STC.xsd in this directory.
 
-    DEVIATION FROM SOURCE: the original xs:include below points to the absolute URL
-    "https://modelica.github.io/ssp-ls-traceability/main/SRMD.xsd". It has been changed here to the
-    relative "SRMD.xsd" so this file resolves against the local SRMD.xsd/STC.xsd bundle without a
-    network fetch, consistent with SRMDMICCore.xsd. No other content was changed.
+    Note: extracting the embedded Schematron with lxml.isoschematron needs the W3C xlink schema;
+    use the local xlink.xsd or a network-enabled resolver.
+
+    DEVIATION FROM SOURCE: the original xs:include points to the absolute URL
+    "https://modelica.github.io/ssp-ls-traceability/main/SRMD.xsd"; changed here to the relative
+    "SRMD.xsd" so the bundle resolves offline. No other content was changed.
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"

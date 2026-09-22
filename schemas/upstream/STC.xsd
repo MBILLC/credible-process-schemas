@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Source: https://raw.githubusercontent.com/pmsfit/SSPTraceability/master/STC.xsd
-    Pulled in via xs:import from SRMD.xsd, retrieved 2026-07-17 as part of the MIC Core SRMD
-    baseline (see SRMDMICCore.xsd for the dependency chain and scope notes).
+    Source: https://raw.githubusercontent.com/pmsfit/SSPTraceability/master/STC.xsd (byte-identical
+    to the file in github.com/modelica/ssp-ls-traceability); retrieved 2026-07-17, imported by
+    SRMD.xsd. No content below was changed from source.
 
-    Defines the SSP Traceability Common (STC) types. The key type for the MIC Core / LOTAR
-    comparison is the GElementCommon group: it defines Classification (repeatable,
-    @type = classification name, e.g. "org.mic-core.mic-core") containing ClassificationEntry
-    (repeatable key-value-pair, @keyword = attribute name, element content = value, optional
-    xlink:href instead of/alongside inline content). This KVP model is what MIC Core's fixed
-    keyword list (administrative-data.model.name, verification-validation.report, ...) is laid
-    on top of, and is the structural counterpart to compare against LOTAR's Traceability_Link_Type
-    / GeneralPLMInfoType element-per-attribute model.
+    Defines the SSP Traceability Common (STC) types, notably the GElementCommon group: Classification
+    (repeatable, @type = classification name, e.g. "org.credible-process.core") containing
+    ClassificationEntry (repeatable key-value pair, @keyword = attribute name, element content =
+    value, optional xlink:href). Every SRMD-based vocabulary (MIC Core, SIC Core, this layer's core
+    vocabulary) is laid on top of this key-value model.
 
-    UNRESOLVED EXTERNAL DEPENDENCIES: the xs:import of ssp-standard/schema/SystemStructureCommon.xsd
-    and of the W3C xlink schema below were not fetched — see SRMDMICCore.xsd for rationale.
-    No content below was changed from source.
+    External dependencies: ssp-standard/schema/SystemStructureCommon.xsd and xlink.xsd, both provided
+    alongside this file for offline compilation (see NOTICE.md).
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"

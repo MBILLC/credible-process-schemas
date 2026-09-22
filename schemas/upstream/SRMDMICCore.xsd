@@ -2,29 +2,18 @@
 <!--
     Source: https://raw.githubusercontent.com/MIC-Core/MIC-Core/main/schemas/SRMDMICCore.xsd
     Referenced from: https://mic-core.github.io/MIC-Core/main/#_mapping_of_mic_core_attributes_to_the_srmd_format
-    (Appendix A, "XML SRMD-Schema for MIC Core", of the MIC Core Specification, retrieved 2026-07-17.)
+    (Appendix A, "XML SRMD-Schema for MIC Core", of the MIC Core Specification), retrieved 2026-07-17.
 
-    This schema does not define new elements of its own. It xs:includes the base SRMD structural
-    schema (SRMD.xsd, saved alongside this file) and adds Schematron rules (embedded in
-    xs:annotation/xs:appinfo) that constrain the generic SRMD Classification/ClassificationEntry
-    key-value-pair model to the fixed set of MIC Core keywords (e.g.
-    "administrative-data.model.name", "verification-validation.report", ...) under
-    Classification[@type='org.mic-core.mic-core'].
+    Defines no new elements: it xs:includes the base SRMD schema (SRMD.xsd, alongside this file) and
+    adds embedded Schematron rules constraining Classification[@type='org.mic-core.mic-core'] to the
+    fixed set of MIC Core keywords (e.g. "administrative-data.model.name").
 
-    Dependency chain resolved for this baseline (see individual files):
-      SRMDMICCore.xsd  =(include)=>  SRMD.xsd  =(import)=>  STC.xsd (SSPTraceabilityCommon)
-                                                 =(import)=>  SystemStructureCommon.xsd (ssp-standard, not resolved)
-      STC.xsd          =(import)=>  https://www.w3.org/1999/xlink (external, not resolved)
+    Dependency chain: SRMDMICCore.xsd =(include)=> SRMD.xsd =(import)=> STC.xsd, SystemStructureCommon.xsd;
+    STC.xsd =(import)=> xlink.xsd.
 
-    SystemStructureCommon.xsd (attribute groups ABaseElement, ATopLevelMetaData, GSignature,
-    GMetaData and type TAnnotations/ContentType) and the W3C xlink schema are generic SSP/XLink
-    infrastructure (ids, signatures, annotations) rather than part of the MIC Core / LOTAR
-    attribute semantics, so they were not pulled in for this comparison baseline.
-
-    DEVIATION FROM SOURCE: the original xs:include below points to the absolute URL
-    "https://pmsfit.github.io/SSPTraceability/master/SRMD.xsd". It has been changed here to the
-    relative "SRMD.xsd" so the three files in this bundle resolve against each other locally
-    without a network fetch. No other content was changed.
+    DEVIATION FROM SOURCE: the original xs:include points to the absolute URL
+    "https://pmsfit.github.io/SSPTraceability/master/SRMD.xsd"; changed here to the relative
+    "SRMD.xsd" so the bundle resolves offline. No other content was changed.
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"

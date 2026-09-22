@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased — 2026-09-22 (industry-neutral clean-up, no rule change)
+
+- `schemas/upstream/`: provenance headers rewritten without references to the originating project's
+  internal plans and task ids; facts (source, commit, date, deviations, known defects) unchanged.
+  `NOTICE.md`: MTMD commit corrected to `1a5908e` (the commit the file was vendored at).
+- `fixtures/`: neutral `organization`/`name` strings (no rule depends on them).
+- `examples/ev-range/`: neutral wording in `generationTool` and three resource descriptions;
+  `DecisionTask.dtmd`'s `DefineResultQuality` sign-off re-signed with the example's development
+  certificate (`csp verify` 2/2 PASS).
+
 ## 0.2.0 — 2026-09-21 (Modelica extension; credibility-level adequacy; library context of use)
 
 ### extensions/modelica (2026-09-06)
