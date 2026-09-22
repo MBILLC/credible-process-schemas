@@ -133,7 +133,8 @@ The library context-of-use declaration (§3) is the extension's evidence *publis
 artefact*: `csp modelica emit cou` writes one declaration per class that carries a `__CMP_Evidence`
 annotation into `<Library>/Resources/credible-process/`, with the ceiling from the class's family
 (`families.yaml`), the validity domains from its effects and claims, the excluded uses from its
-`limitations`, and `cou.evidence-ref` pointing at the family record — so an FMU compiled from the
+`limitations`, `cou.evidence-ref` pointing at the family record and `cou.evidence-note` carrying each claim's
+"where to look" — so an FMU compiled from the
 library can carry, under `extra/`, what its models were built for without the source.
 
 ## 5. Fixtures

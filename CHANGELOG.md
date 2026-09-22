@@ -29,6 +29,8 @@
   (external evidence accepted only when signed off; structural/library records INFO); the declarations are
   what `csp modelica emit cou` generates from a library's evidence; four Modelica-idiom adequacy fixtures
   (15 cases); `extensions/modelica/docs/01` cross-references the core check.
+- `cou.evidence-note` (Recommended, repeatable): a claim's human-readable "where to look", kept apart from
+  `cou.evidence-ref`, which stays a resolvable reference.
 
 ## 0.1.0 — 2026-09-05 (initial extraction)
 

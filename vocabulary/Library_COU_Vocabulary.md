@@ -27,7 +27,8 @@ One SRMD per exported model, exactly one block, file name `<cou.model-id>.srmd`.
 | `cou.validity-domain` | free text, or a structured line `quantity: min..max unit`; **repeatable** | **Mandatory** (≥ 1) | The domain over which the evidence behind the ceiling holds. Reported by `csp adequacy` next to the task; not machine-compared in this release (plan OD-A6). |
 | `cou.excluded-use` | free text; **repeatable** | Recommended | Known misuses the author rules out explicitly. |
 | `cou.credibility-ceiling` | `CL1` \| `CL2` \| `CL3` \| `CL4` | **Mandatory** | The level the model's own evidence supports inside the validity domain. An MTMD that builds on this model cannot claim more without a signed `credibility.adequacy-override`. |
-| `cou.evidence-ref` | relative reference to the model's MTMD, a validation report, or the `externally-attested` attestation; **repeatable** | **Mandatory from CL2** | Where the evidence behind the ceiling is. For a vendor library this is the attestation that also satisfies `model-validation.mode = externally-attested` (plan OD-A3). |
+| `cou.evidence-ref` | relative reference (a path or URI) to the model's MTMD, a validation report, or the `externally-attested` attestation; **repeatable** | **Mandatory from CL2** | Where the evidence behind the ceiling is — always something a tool can resolve. For a vendor library this is the attestation that also satisfies `model-validation.mode = externally-attested` (plan OD-A3). |
+| `cou.evidence-note` | free text, `<claim id>: <where to look>`; **repeatable** | Recommended | What a human should read for each claim (a report section, a test model, a cited source) — prose, kept apart from `cou.evidence-ref` so a reference stays resolvable and a note stays readable. |
 | `cou.declared-by` | person / role in the library's organisation | **Mandatory** | Who declared it. |
 | `cou.declared-on` | ISO date | **Mandatory** | When. |
 

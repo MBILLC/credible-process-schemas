@@ -24,7 +24,7 @@
 
   <!-- ===== declaration block ===== -->
   <pattern id="cp-lcou-allowed-keywords">
-    <let name="allowed" value="'|cou.model-id|cou.library|cou.library-version|cou.intended-use|cou.validity-domain|cou.excluded-use|cou.credibility-ceiling|cou.evidence-ref|cou.declared-by|cou.declared-on|'"/>
+    <let name="allowed" value="'|cou.model-id|cou.library|cou.library-version|cou.intended-use|cou.validity-domain|cou.excluded-use|cou.credibility-ceiling|cou.evidence-ref|cou.evidence-note|cou.declared-by|cou.declared-on|'"/>
     <rule context="//stc:Classification[@type='org.credible-process.library-cou']/stc:ClassificationEntry" id="CP-LCOU-001">
       <assert test="contains($allowed, concat('|', @keyword, '|'))" id="CP-LCOU-001a" role="error">
         Unknown org.credible-process.library-cou keyword '<value-of select="@keyword"/>'.
@@ -41,10 +41,10 @@
   </pattern>
 
   <pattern id="cp-lcou-non-repeatable">
-    <rule context="//stc:Classification[@type='org.credible-process.library-cou']/stc:ClassificationEntry[@keyword!='cou.validity-domain' and @keyword!='cou.excluded-use' and @keyword!='cou.evidence-ref']" id="CP-LCOU-003">
+    <rule context="//stc:Classification[@type='org.credible-process.library-cou']/stc:ClassificationEntry[@keyword!='cou.validity-domain' and @keyword!='cou.excluded-use' and @keyword!='cou.evidence-ref' and @keyword!='cou.evidence-note']" id="CP-LCOU-003">
       <assert test="count(preceding-sibling::stc:ClassificationEntry[@keyword = current()/@keyword]) = 0" id="CP-LCOU-003a" role="error">
         Keyword '<value-of select="@keyword"/>' occurs more than once in the same library-cou block; only
-        cou.validity-domain, cou.excluded-use and cou.evidence-ref are repeatable.
+        cou.validity-domain, cou.excluded-use, cou.evidence-ref and cou.evidence-note are repeatable.
       </assert>
     </rule>
   </pattern>
