@@ -3,6 +3,10 @@ on: [push, pull_request]
 jobs:
   check:
     runs-on: ubuntu-latest
+    env:
+      # The tools are installed non-editable, so they cannot find this checkout as their
+      # sibling directory; tell them where it is.
+      CREDIBLE_PROCESS_SCHEMAS: ${{ github.workspace }}/credible-process-schemas
     steps:
       - uses: actions/checkout@v4
         with: {path: credible-process-schemas}
