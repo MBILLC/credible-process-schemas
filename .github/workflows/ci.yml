@@ -7,7 +7,12 @@ jobs:
       - uses: actions/checkout@v4
         with: {path: credible-process-schemas}
       - uses: actions/checkout@v4
-        with: {repository: MBILLC/credible-process-tools, path: credible-process-tools}  # pin a tag once released
+        with:
+          repository: MBILLC/credible-process-tools
+          path: credible-process-tools
+          # The tools repo is private: the default GITHUB_TOKEN can only read THIS repo.
+          # CROSS_REPO_CI is a token with read access to credible-process-tools.
+          token: ${{ secrets.CROSS_REPO_CI }}
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - run: pip install ./credible-process-tools
