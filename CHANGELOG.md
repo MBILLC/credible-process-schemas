@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — 2026-10-23 (documentation only, no rule change)
+
+- `extensions/modelica/docs/03`: a family record is generated from the Modelica source, not from
+  planning documents; a model requirement is an effect, a test-case requirement a claim's
+  tolerance. Matches credible-process-tools' requirements-from-effects change.
+
 ## Unreleased — 2026-09-22 (industry-neutral clean-up, no rule change)
 
 - `schemas/upstream/`: provenance headers rewritten without references to the originating project's

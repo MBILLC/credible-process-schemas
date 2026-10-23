@@ -18,9 +18,13 @@ asks about together ("is the bearing model credible for my case").
   refuses a class in no family, in two, a family naming a class that does not exist, and a class
   with claims inside a structural family.
 - Each family gets one MTMD (`record.role = component-family` or `structural`), generated from the
-  library's `__CMP_*` annotations (`docs/02`), the family's plan documents and the credibility
+  library's `__CMP_*` annotations (`docs/02`), its classes' documentation and the credibility
   report's sections that the family's claims cite. Sections no claim cites are assigned in
-  `step-map.yaml`, or belong to the library.
+  `step-map.yaml`, or belong to the library. **The Modelica source is the authority:** a model
+  requirement is an effect (`__CMP_Effect`: what the class shall provide over its validity domain,
+  with the effect's id), a test-case requirement is a claim's tolerance, the analysis is the
+  classes' documentation, and a document is cited through the class whose documentation links it.
+  Planning documents are not record content.
 - The **library record** (`record.role = library`) is the release: it holds the library-wide
   resources (domain of applicability, environment, calculation verification, the release gate) and
   names every family record in its `DerivationChain`. Its decision means *the release*.
